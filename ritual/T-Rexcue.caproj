@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
-    <name>New project</name>
+    <name>T-Rexcue</name>
     <description></description>
     <version>1.0.0.0</version>
     <author></author>
@@ -26,8 +26,8 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>854</width>
-        <height>480</height>
+        <width>480</width>
+        <height>800</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -48,7 +48,7 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="Sprite" sid="583566879125935">
+        <object-type name="spAndaime" sid="583566879125935">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Solid" sid="550895487244652">
@@ -57,7 +57,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="225299874347788" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1.004" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -70,7 +70,7 @@
             </behaviors>
             <texture original-source="C:\Users\tiago.parente\Desktop\Nova pasta\isopor.png" />
         </object-type>
-        <object-type name="Sprite2" sid="859433891237748">
+        <object-type name="spTamborEsq" sid="859433891237748">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Timer" sid="757041839679708">
@@ -86,7 +86,7 @@
         <object-type name="Mouse" sid="980890796181070">
             <plugin id="Mouse" />
         </object-type>
-        <object-type name="Sprite3" sid="485749512932114">
+        <object-type name="spTempStart" sid="485749512932114">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="767161680564901" speed="5">
@@ -94,10 +94,10 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Text2" sid="182077567939738">
+        <object-type name="txTempTap" sid="182077567939738">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite4" sid="395477177120031">
+        <object-type name="spJogador" sid="395477177120031">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="145774217231409" speed="5">
@@ -108,29 +108,32 @@
         <object-type name="Touch" sid="366687631205290">
             <plugin id="Touch" />
         </object-type>
-        <object-type name="Sprite5" sid="934267478209113">
+        <object-type name="spTamborDir" sid="934267478209113">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Timer" sid="813236974816144">
-                    <behavior id="Timer" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="106497290010470" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Text" sid="937136816603110">
+        <object-type name="txTempStart" sid="937136816603110">
             <plugin id="Text" />
         </object-type>
     </object-folder>
-    <families />
+    <families>
+        <family name="fmTambor" plugin-id="Sprite" sid="284777844382716">
+            <members>
+                <member>spTamborDir</member>
+                <member>spTamborEsq</member>
+            </members>
+        </family>
+    </families>
     <layout-folder>
-        <layout>Layout 1.xml</layout>
+        <layout>MAIN_GAME.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>GAME_EVENTS.xml</event-sheet>
+        <event-sheet>NAVIGATION.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="4" />
