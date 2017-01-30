@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="POS_X" sid="937900342604450" static="0" type="number">15</variable>
+        <event-block sid="783992414058772">
+            <conditions>
+                <condition id="2" name="Is in touch" sid="887293270567569" type="Touch" />
+                <condition id="-9" inverted="1" name="Is visible" sid="729595786947052" type="Text" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="172152129144571">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="540746060478208" type="System">
+                            <param id="0" name="First value">Touch.X</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Second value">LayoutWidth/2</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="105479878452790" type="Sprite4">
+                            <param id="0" name="Object">Sprite2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="388494691426482" type="Sprite4">
+                            <param id="0" name="X">Self.X - POS_X</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="594486353101130">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="345459185871280" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="660646768464772">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="522893693867833" type="System">
+                                    <param id="0" name="First value">Touch.X</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Second value">LayoutWidth/2</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="274998465416154" type="Sprite4">
+                                    <param id="0" name="Object">Sprite5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="439055633597724" type="Sprite4">
+                                    <param id="0" name="X">Self.X + POS_X</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="260069918511977">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="451993563770038" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite3</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="560812064829694" type="System">
+                    <param id="0" name="First value">TiledBackground.Bullet.Speed</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="328946439009340" type="Sprite3" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="334967447438040" type="Sprite3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="249888610072334" type="Text">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="925271944112768" type="System">
+                    <param id="0" name="Seconds">0.25</param>
+                </action>
+                <action id="-15" name="Set visible" sid="415006901249220" type="Text">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="611163255676253" type="TiledBackground">
+                    <param id="0" name="Speed">100</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="512843945603399" type="TiledBackground">
+                    <param id="0" name="Angle">-90</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="865111915037927" type="TiledBackground">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="643887651073373">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="517609524106124" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="0" name="Set speed" sid="888296844908268" type="TiledBackground">
+                    <param id="0" name="Speed">150</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="126077903430446" type="TiledBackground">
+                    <param id="0" name="Angle">90</param>
+                </action>
+                <action id="-15" name="Set visible" sid="817298259645510" type="Text2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Timer" id="1" name="Stop timer" sid="152781401937195" type="Sprite2">
+                    <param id="0" name="Tag">&quot;tap&quot;</param>
+                </action>
+                <action behavior="Timer" id="0" name="Start timer" sid="927665749733226" type="Sprite2">
+                    <param id="0" name="Duration">0.25</param>
+                    <param id="1" name="Type">0</param>
+                    <param id="2" name="Tag">&quot;tap&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="310965368293125">
+            <conditions>
+                <condition behavior="Timer" id="0" name="On timer" sid="382590881477340" type="Sprite2">
+                    <param id="0" name="Tag">&quot;tap&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="0" name="Set speed" sid="313797410348591" type="TiledBackground">
+                    <param id="0" name="Speed">100</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="402374786348990" type="TiledBackground">
+                    <param id="0" name="Angle">-90</param>
+                </action>
+                <action id="-15" name="Set visible" sid="848763639167415" type="Text2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="518182210532179">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="426109860069370" type="Touch">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="939038379747195">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="468269908281446" type="Sprite4">
+                            <param id="0" name="Object">Sprite2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="810400917673400" type="TiledBackground">
+                            <param id="0" name="Speed">150</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="510368882261058" type="TiledBackground">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="632584080511668" type="Text2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Timer" id="1" name="Stop timer" sid="826009180656995" type="Sprite2">
+                            <param id="0" name="Tag">&quot;tap&quot;</param>
+                        </action>
+                        <action behavior="Timer" id="0" name="Start timer" sid="257009624585279" type="Sprite2">
+                            <param id="0" name="Duration">0.25</param>
+                            <param id="1" name="Type">0</param>
+                            <param id="2" name="Tag">&quot;tap&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="185278824992561">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="773909778078241" type="Touch">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="879011146417983">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="461289977965477" type="Sprite4">
+                            <param id="0" name="Object">Sprite5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="836144457726825" type="TiledBackground">
+                            <param id="0" name="Speed">150</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="672631599901500" type="TiledBackground">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="998172259566231" type="Text2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Timer" id="1" name="Stop timer" sid="360528668641904" type="Sprite2">
+                            <param id="0" name="Tag">&quot;tap&quot;</param>
+                        </action>
+                        <action behavior="Timer" id="0" name="Start timer" sid="145048985421179" type="Sprite2">
+                            <param id="0" name="Duration">0.25</param>
+                            <param id="1" name="Type">0</param>
+                            <param id="2" name="Tag">&quot;tap&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
