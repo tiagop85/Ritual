@@ -3,7 +3,15 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GAME_EVENTS</name>
     <events>
+        <variable constant="0" name="LIM_X1" sid="187078160590926" static="0" type="number">110</variable>
+        <variable constant="0" name="LIM_X2" sid="929918891912199" static="0" type="number">370</variable>
+        <variable constant="0" name="CODIGO_MAX" sid="717683184239700" static="0" type="number">6</variable>
+        <variable constant="0" name="CODIGO_MAX_ATUAL" sid="791027000298043" static="0" type="number">4</variable>
+        <variable constant="0" name="RESP_ATUAL" sid="341811714931883" static="0" type="number">0</variable>
         <variable constant="0" name="POS_X" sid="937900342604450" static="0" type="number">4</variable>
+        <variable constant="0" name="VEL_BG_1" sid="209876311762322" static="0" type="number">100</variable>
+        <variable constant="0" name="VEL_BG_2" sid="197460785222325" static="0" type="number">150</variable>
+        <variable constant="0" name="VEL_IT_1" sid="830831248661449" static="0" type="number">100</variable>
         <event-block sid="260069918511977">
             <conditions>
                 <condition id="6" name="On object clicked" sid="451993563770038" type="Mouse">
@@ -32,7 +40,7 @@
                     <param id="0" name="Visibility">0</param>
                 </action>
                 <action behavior="Bullet" id="0" name="Set speed" sid="611163255676253" type="TiledBackground">
-                    <param id="0" name="Speed">100</param>
+                    <param id="0" name="Speed">VEL_BG_1</param>
                 </action>
                 <action behavior="Bullet" id="3" name="Set angle of motion" sid="512843945603399" type="TiledBackground">
                     <param id="0" name="Angle">-90</param>
@@ -40,7 +48,81 @@
                 <action behavior="Bullet" id="5" name="Set enabled" sid="865111915037927" type="TiledBackground">
                     <param id="0" name="State">1</param>
                 </action>
+                <action id="-15" name="Set visible" sid="779508598706213" type="txGabarito">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="254365776942424" type="txGabarito">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="1" name="Set size" sid="580561638593486" type="arCode">
+                    <param id="0" name="Width">CODIGO_MAX</param>
+                    <param id="1" name="Height">1</param>
+                    <param id="2" name="Depth">1</param>
+                </action>
+                <action id="1" name="Set size" sid="845451089856587" type="arTemp">
+                    <param id="0" name="Width">CODIGO_MAX</param>
+                    <param id="1" name="Height">1</param>
+                    <param id="2" name="Depth">1</param>
+                </action>
+                <action id="1" name="Set size" sid="507470019763096" type="arResp">
+                    <param id="0" name="Width">CODIGO_MAX</param>
+                    <param id="1" name="Height">1</param>
+                    <param id="2" name="Depth">1</param>
+                </action>
             </actions>
+            <sub-events>
+                <variable constant="0" name="pick" sid="172954127872288" static="0" type="number">0</variable>
+                <event-block sid="918383527765875">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="965290403112375" type="System">
+                            <param id="0" name="Count">arTemp.Width</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="538422025452274" type="arTemp">
+                            <param id="0" name="X">loopindex</param>
+                            <param id="1" name="Value">loopindex+1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="133300109355459">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="248816975504342" type="System">
+                            <param id="0" name="Count">arCode.Width</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="464229697687546" type="System">
+                            <param id="0" name="Variable">pick</param>
+                            <param id="1" name="Value">floor(random(arTemp.Width))</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="444935861860945" type="arCode">
+                            <param id="0" name="X">loopindex</param>
+                            <param id="1" name="Value">arTemp.At(pick)</param>
+                        </action>
+                        <action id="9" name="Delete" sid="145033144393742" type="arTemp">
+                            <param id="0" name="Index">pick</param>
+                            <param id="1" name="Axis">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="851268116969490">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="759323209136630" type="System">
+                                    <param id="0" name="First value">loopindex</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">CODIGO_MAX_ATUAL</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="242572371397582" type="txGabarito">
+                                    <param id="0" name="Text">self.Text &amp; arCode.At(loopindex)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="783992414058772">
             <conditions>
@@ -109,7 +191,7 @@
                     </conditions>
                     <actions>
                         <action behavior="Bullet" id="0" name="Set speed" sid="836144457726825" type="TiledBackground">
-                            <param id="0" name="Speed">150</param>
+                            <param id="0" name="Speed">VEL_BG_2</param>
                         </action>
                         <action behavior="Bullet" id="3" name="Set angle of motion" sid="672631599901500" type="TiledBackground">
                             <param id="0" name="Angle">90</param>
@@ -125,6 +207,9 @@
                             <param id="1" name="Type">0</param>
                             <param id="2" name="Tag">&quot;tap&quot;</param>
                         </action>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="452295523957703" type="sp">
+                            <param id="0" name="Speed">VEL_BG_2</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -137,15 +222,170 @@
             </conditions>
             <actions>
                 <action behavior="Bullet" id="0" name="Set speed" sid="313797410348591" type="TiledBackground">
-                    <param id="0" name="Speed">100</param>
+                    <param id="0" name="Speed">VEL_BG_1</param>
                 </action>
                 <action behavior="Bullet" id="3" name="Set angle of motion" sid="402374786348990" type="TiledBackground">
                     <param id="0" name="Angle">-90</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="753502804731956" type="sp">
+                    <param id="0" name="Speed">VEL_IT_1</param>
                 </action>
                 <action id="-15" name="Set visible" sid="848763639167415" type="txTempTap">
                     <param id="0" name="Visibility">0</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="303964236489190">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="611064829331013" type="System">
+                    <param id="0" name="Interval (seconds)">2.5</param>
+                </condition>
+                <condition id="-9" inverted="1" name="Is visible" sid="881132193738539" type="txTempStart" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="281407335892065" type="System">
+                    <param id="0" name="Object to create">sp</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">LIM_X1+floor(random(LIM_X2-LIM_X1))</param>
+                    <param id="3" name="Y">0</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="348615893412646" type="sp">
+                    <param id="0" name="Speed">VEL_IT_1</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="513102665066577" type="sp">
+                    <param id="0" name="Angle">90</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="704912198214261" type="sp">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action disabled="1" id="4" name="Set animation" sid="745150731821110" type="sp">
+                    <param id="0" name="Animation">choose(&quot;RESP_01&quot;,&quot;RESP_02&quot;,&quot;RESP_03&quot;,&quot;RESP_04&quot;,&quot;RESP_05&quot;,&quot;RESP_06&quot;,&quot;TRASH_01&quot;,&quot;TRASH_01&quot;,&quot;TRASH_02&quot;,&quot;TRASH_03&quot;,&quot;TRASH_04&quot;,&quot;TRASH_05&quot;,&quot;TRASH_06&quot;)</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="987839211646859" type="sp">
+                    <param id="0" name="Animation">choose(&quot;RESP_0&quot;&amp;arCode.At(RESP_ATUAL),&quot;TRASH_01&quot;,&quot;TRASH_01&quot;,&quot;TRASH_02&quot;,&quot;TRASH_03&quot;,&quot;TRASH_04&quot;,&quot;TRASH_05&quot;,&quot;TRASH_06&quot;)</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="216272149096961" type="sp">
+                    <param id="0" name="Instance variable">CODIGO</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="669481036547375">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="870313839380355" type="sp">
+                            <param id="0" name="Animation">&quot;RESP_01&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="713970089455217" type="sp">
+                            <param id="0" name="Instance variable">CODIGO</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="496504233177223">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="158923582601444" type="sp">
+                            <param id="0" name="Animation">&quot;RESP_02&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="782817904530234" type="sp">
+                            <param id="0" name="Instance variable">CODIGO</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="727513947004896">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="420199781088024" type="sp">
+                            <param id="0" name="Animation">&quot;RESP_03&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="904893920744253" type="sp">
+                            <param id="0" name="Instance variable">CODIGO</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="794940165548122">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="886674012974145" type="sp">
+                            <param id="0" name="Animation">&quot;RESP_04&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="231692874115483" type="sp">
+                            <param id="0" name="Instance variable">CODIGO</param>
+                            <param id="1" name="Value">4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="599769614790978">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="260329112307850" type="sp">
+                            <param id="0" name="Animation">&quot;RESP_05&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="423711693095402" type="sp">
+                            <param id="0" name="Instance variable">CODIGO</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="729797223441400">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="726757276137035" type="sp">
+                            <param id="0" name="Animation">&quot;RESP_06&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="684391602581119" type="sp">
+                            <param id="0" name="Instance variable">CODIGO</param>
+                            <param id="1" name="Value">6</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="305979935122422">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="460421379506288" type="spJogador">
+                    <param id="0" name="Object">sp</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="169197404486709">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="180513294453424" type="System">
+                            <param id="0" name="First value">sp.CODIGO</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">arCode.At(RESP_ATUAL)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="320167230369825" type="System">
+                            <param id="0" name="Variable">RESP_ATUAL</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="780017851761099" type="sp" />
+                    </actions>
+                </event-block>
+                <event-block sid="481759314438370">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="401361858280607" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-21" name="Reset global variables" sid="188893142846566" type="System" />
+                        <action id="-26" name="Restart layout" sid="461751133740531" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

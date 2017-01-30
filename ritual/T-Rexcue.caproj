@@ -10,6 +10,7 @@
     <unique-id>34zvmmlx2prlp</unique-id>
     <saved-with-version>24100</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -118,6 +119,67 @@
         </object-type>
         <object-type name="txTempStart" sid="937136816603110">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="sp" sid="673825854500851">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="CODIGO" sid="338142541836868" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="769596530295238">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="RESP_01" pingpong="0" repeatcount="1" repeatto="0" sid="134008742901776" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="RESP_02" pingpong="0" repeatcount="1" repeatto="0" sid="794919215713246" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="RESP_03" pingpong="0" repeatcount="1" repeatto="0" sid="107052198582055" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="RESP_04" pingpong="0" repeatcount="1" repeatto="0" sid="461934462874836" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="RESP_05" pingpong="0" repeatcount="1" repeatto="0" sid="819345655880198" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="RESP_06" pingpong="0" repeatcount="1" repeatto="0" sid="749413079823121" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="TRASH_01" pingpong="0" repeatcount="1" repeatto="0" sid="227704657095520" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="TRASH_02" pingpong="0" repeatcount="1" repeatto="0" sid="895601813404193" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="TRASH_03" pingpong="0" repeatcount="1" repeatto="0" sid="663413317085329" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="TRASH_04" pingpong="0" repeatcount="1" repeatto="0" sid="304848323032363" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="TRASH_05" pingpong="0" repeatcount="1" repeatto="0" sid="685829110826728" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="TRASH_06" pingpong="0" repeatcount="1" repeatto="0" sid="774896677145959" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txGabarito" sid="604364821843830">
+            <plugin id="Text" />
+        </object-type>
+        <object-type global="1" name="arCode" sid="305528056252654">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type global="1" name="arTemp" sid="181822386033315">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type global="1" name="arResp" sid="874349203858193">
+            <plugin id="Arr" />
         </object-type>
     </object-folder>
     <families>
