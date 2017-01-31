@@ -19,6 +19,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -58,7 +59,17 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="225299874347788" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\tiago.parente\Downloads\drive-download-20170130T214107Z\plataformarexcue.png">
+                        <collision-poly>
+                            <point x="0.13125" y="0.0766423" />
+                            <point x="0.5" y="0.86618" />
+                            <point x="0.9125" y="0.0510949" />
+                            <point x="0.914583" y="0.5" />
+                            <point x="0.841667" y="0.907543" />
+                            <point x="0.158333" y="0.907543" />
+                            <point x="0.127083" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -82,6 +93,9 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="807093883867126" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
+                <animation framecount="1" loop="0" name="INVISIBLE" pingpong="0" repeatcount="1" repeatto="0" sid="252691228526822" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="Mouse" sid="980890796181070">
@@ -100,6 +114,11 @@
         </object-type>
         <object-type name="spJogador" sid="395477177120031">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="515942093487420">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="145774217231409" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -113,6 +132,9 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="106497290010470" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="INVISIBLE" pingpong="0" repeatcount="1" repeatto="0" sid="235778980070039" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
@@ -180,6 +202,92 @@
         </object-type>
         <object-type global="1" name="arResp" sid="874349203858193">
             <plugin id="Arr" />
+        </object-type>
+        <object-type name="spFogo" sid="562363013132622">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="669528347247880">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="7" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="636480030844330" speed="10">
+                    <frame duration="1" hotspotX="0.500864" hotspotY="0.502304" />
+                    <frame duration="1" hotspotX="0.500864" hotspotY="0.502304" />
+                    <frame duration="1" hotspotX="0.500864" hotspotY="0.502304" />
+                    <frame duration="1" hotspotX="0.500864" hotspotY="0.502304" />
+                    <frame duration="1" hotspotX="0.500864" hotspotY="0.502304" />
+                    <frame duration="1" hotspotX="0.500864" hotspotY="0.502304" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500329" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spBordaInferior" sid="629301962561326">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="375300901179629">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="650928046948332" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="INVISIBLE" pingpong="0" repeatcount="1" repeatto="0" sid="318926627042897" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spLimiteInferior" sid="811564904495459">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="132296968042884" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="INVISIBLE" pingpong="0" repeatcount="1" repeatto="0" sid="363187325039899" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="941222005037296">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="532055452160603" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spChao" sid="169943092887420">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="836265446849391">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="825805484364772" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spLimiteInferiorMax" sid="876521755081919">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="316811214551295">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="480711667427306" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="INVISIBLE" pingpong="0" repeatcount="1" repeatto="0" sid="985494692136703" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txGameOver" sid="184446071214561">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families>
