@@ -36,12 +36,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/spTempStart/" />
         <folder expanded="1" path="animation-folder/spJogador/" />
         <folder expanded="1" path="animation-folder/spTamborDir/" />
-        <folder expanded="1" path="animation-folder/sp/" />
+        <folder expanded="1" path="animation-folder/spObjetoCodigo/" />
         <folder expanded="1" path="animation-folder/spFogo/" />
         <folder expanded="1" path="animation-folder/spBordaInferior/" />
         <folder expanded="1" path="animation-folder/spLimiteInferior/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />
         <folder expanded="1" path="animation-folder/spChao/" />
         <folder expanded="1" path="animation-folder/spLimiteInferiorMax/" />
+        <folder expanded="1" path="animation-folder/spLimiteSuperior/" />
+        <folder expanded="1" path="animation-folder/spBordaSuperior/" />
+        <folder expanded="1" path="animation-folder/spTeto/" />
     </folders-expanded>
 </c2uistate>

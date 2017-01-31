@@ -142,7 +142,7 @@
         <object-type name="txTempStart" sid="937136816603110">
             <plugin id="Text" />
         </object-type>
-        <object-type name="sp" sid="673825854500851">
+        <object-type name="spObjetoCodigo" sid="673825854500851">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="CODIGO" sid="338142541836868" type="number" />
@@ -288,6 +288,46 @@
         </object-type>
         <object-type name="txGameOver" sid="184446071214561">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="spLimiteSuperior" sid="640126372400295">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="260682040202884" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="INVISIBLE" pingpong="0" repeatcount="1" repeatto="0" sid="855167583932472" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spBordaSuperior" sid="734211687734858">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="242322359549183">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="152441554525248" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="INVISIBLE" pingpong="0" repeatcount="1" repeatto="0" sid="518153392578874" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spTeto" sid="708421254101111">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="993235615625834">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="685748779899208" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families>
