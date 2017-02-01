@@ -74,7 +74,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TiledBackground" sid="404031263765950">
+        <object-type name="tbGuia" sid="404031263765950">
             <plugin id="TiledBg" />
             <behaviors>
                 <behavior-type name="Bullet" sid="154900239875419">
@@ -102,11 +102,20 @@
         <object-type name="Mouse" sid="980890796181070">
             <plugin id="Mouse" />
         </object-type>
-        <object-type name="spTempStart" sid="485749512932114">
+        <object-type name="spStart" sid="485749512932114">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="767161680564901" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502304" original-source="C:\Users\tiago.parente\Downloads\drive-download-20170201T133247Z\REX-simbolos.png">
+                        <collision-poly>
+                            <point x="0.00793651" y="0.0276498" />
+                            <point x="0.5" y="0.00460829" />
+                            <point x="0.992063" y="0.0276498" />
+                            <point x="0.996032" y="0.963134" />
+                            <point x="0.5" y="0.990783" />
+                            <point x="0.00396825" y="0.963134" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -115,14 +124,56 @@
         </object-type>
         <object-type name="spJogador" sid="395477177120031">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="DIRECTION" sid="797203090930077" type="string" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Solid" sid="515942093487420">
                     <behavior id="solid" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="145774217231409" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="4" loop="1" name="PARADO" pingpong="0" repeatcount="1" repeatto="0" sid="145774217231409" speed="5">
+                    <frame duration="1" hotspotX="0.51145" hotspotY="0.589744">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.990476" y="0" />
+                            <point x="0.990476" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.51145" hotspotY="0.589744">
+                        <collision-poly>
+                            <point x="0" y="0.0108696" />
+                            <point x="0.990476" y="0.0108696" />
+                            <point x="0.990476" y="0.994565" />
+                            <point x="0" y="0.994565" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.51145" hotspotY="0.589744">
+                        <collision-poly>
+                            <point x="0" y="0.0271739" />
+                            <point x="1" y="0.0271739" />
+                            <point x="1" y="0.978261" />
+                            <point x="0" y="0.978261" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.51145" hotspotY="0.589744">
+                        <collision-poly>
+                            <point x="0" y="0.0108696" />
+                            <point x="1" y="0.0108696" />
+                            <point x="1" y="0.994565" />
+                            <point x="0" y="0.994565" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="6" loop="0" name="ANDANDO" pingpong="0" repeatcount="1" repeatto="0" sid="310757356862588" speed="5">
+                    <frame duration="1" hotspotX="0.495575" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.503817" hotspotY="0.502564" />
+                    <frame duration="1" hotspotX="0.503817" hotspotY="0.502564" />
+                    <frame duration="1" hotspotX="0.503817" hotspotY="0.502564" />
+                    <frame duration="1" hotspotX="0.503817" hotspotY="0.502564" />
+                    <frame duration="1" hotspotX="0.503817" hotspotY="0.502564" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -146,7 +197,9 @@
         <object-type name="spObjetoCodigo" sid="673825854500851">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="CODIGO" sid="338142541836868" type="number" />
+                <instance-variable name="SKIN_MOEDA" sid="338142541836868" type="number" />
+                <instance-variable name="RESP_SEQUENCIA" sid="558276741865527" type="number" />
+                <instance-variable name="RESP_CODIGO" sid="578091591746617" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Bullet" sid="769596530295238">
@@ -155,45 +208,68 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="RESP_01" pingpong="0" repeatcount="1" repeatto="0" sid="134008742901776" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.491525" hotspotY="0.517241" />
                 </animation>
                 <animation framecount="1" loop="0" name="RESP_02" pingpong="0" repeatcount="1" repeatto="0" sid="794919215713246" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.491525" hotspotY="0.517241" />
                 </animation>
                 <animation framecount="1" loop="0" name="RESP_03" pingpong="0" repeatcount="1" repeatto="0" sid="107052198582055" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.491525" hotspotY="0.517241" />
                 </animation>
                 <animation framecount="1" loop="0" name="RESP_04" pingpong="0" repeatcount="1" repeatto="0" sid="461934462874836" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.491525" hotspotY="0.517241" />
                 </animation>
                 <animation framecount="1" loop="0" name="RESP_05" pingpong="0" repeatcount="1" repeatto="0" sid="819345655880198" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.491525" hotspotY="0.517241" />
                 </animation>
                 <animation framecount="1" loop="0" name="RESP_06" pingpong="0" repeatcount="1" repeatto="0" sid="749413079823121" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.517857" />
                 </animation>
                 <animation framecount="1" loop="0" name="TRASH_01" pingpong="0" repeatcount="1" repeatto="0" sid="227704657095520" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.517857" />
                 </animation>
                 <animation framecount="1" loop="0" name="TRASH_02" pingpong="0" repeatcount="1" repeatto="0" sid="895601813404193" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.517857" />
                 </animation>
                 <animation framecount="1" loop="0" name="TRASH_03" pingpong="0" repeatcount="1" repeatto="0" sid="663413317085329" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.517857" />
                 </animation>
                 <animation framecount="1" loop="0" name="TRASH_04" pingpong="0" repeatcount="1" repeatto="0" sid="304848323032363" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.492" hotspotY="0.516" />
                 </animation>
                 <animation framecount="1" loop="0" name="TRASH_05" pingpong="0" repeatcount="1" repeatto="0" sid="685829110826728" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.517857" />
                 </animation>
                 <animation framecount="1" loop="0" name="TRASH_06" pingpong="0" repeatcount="1" repeatto="0" sid="774896677145959" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.517857" />
+                </animation>
+                <animation framecount="1" loop="0" name="NENHUM" pingpong="0" repeatcount="1" repeatto="0" sid="436715341803706" speed="5">
+                    <frame duration="1" hotspotX="0.492" hotspotY="0.516" />
+                </animation>
+                <animation framecount="1" loop="0" name="SENHA" pingpong="0" repeatcount="1" repeatto="0" sid="345335535047535" speed="5">
+                    <frame duration="1" hotspotX="0.491525" hotspotY="0.517241" />
+                </animation>
+                <animation framecount="1" loop="0" name="ERRO" pingpong="0" repeatcount="1" repeatto="0" sid="729595271331906" speed="5">
+                    <frame duration="1" hotspotX="0.491525" hotspotY="0.517241" />
+                </animation>
+                <animation framecount="15" loop="0" name="MODELOS_MOEDAS" pingpong="0" repeatcount="1" repeatto="0" sid="359312522570821" speed="5">
+                    <frame duration="1" hotspotX="0.491525" hotspotY="0.517241" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.517241" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.517241" />
+                    <frame duration="1" hotspotX="0.491525" hotspotY="0.517241" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.517241" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.517241" />
+                    <frame duration="1" hotspotX="0.491525" hotspotY="0.517241" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.517241" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.517241" />
+                    <frame duration="1" hotspotX="0.491525" hotspotY="0.517241" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.517241" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.517241" />
+                    <frame duration="1" hotspotX="0.491525" hotspotY="0.517241" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.517241" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.517241" />
                 </animation>
             </animation-folder>
-        </object-type>
-        <object-type name="txGabarito" sid="604364821843830">
-            <plugin id="Text" />
         </object-type>
         <object-type global="1" name="arCode" sid="305528056252654">
             <plugin id="Arr" />
@@ -287,9 +363,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="txGameOver" sid="184446071214561">
-            <plugin id="Text" />
-        </object-type>
         <object-type name="spLimiteSuperior" sid="640126372400295">
             <plugin id="Sprite" />
             <animation-folder>
@@ -347,6 +420,102 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="301160939847596" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spDerrota" sid="648818092847134">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="317439943990970" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501976" original-source="C:\Users\tiago.parente\Downloads\drive-download-20170201T133247Z\REXderrota.png">
+                        <collision-poly>
+                            <point x="0.0680851" y="0.158103" />
+                            <point x="0.489362" y="0.00395257" />
+                            <point x="0.86383" y="0.245059" />
+                            <point x="0.970213" y="0.505929" />
+                            <point x="0.914894" y="0.865613" />
+                            <point x="0.489362" y="0.996047" />
+                            <point x="0.093617" y="0.810277" />
+                            <point x="0.0276596" y="0.505929" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spPiramide" sid="126303185333004">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="226467010009626">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="650905858254452" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.494737" original-source="C:\Users\tiago.parente\Downloads\drive-download-20170201T133247Z\piramiderexcue.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.000657895" />
+                            <point x="0.998415" y="0.494079" />
+                            <point x="0.994453" y="0.996053" />
+                            <point x="0.00792393" y="0.994079" />
+                            <point x="0.00554675" y="0.494079" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spFundo" sid="125727878578245">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="323764928745514">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="789705375155029" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\tiago.parente\Downloads\drive-download-20170201T133247Z\ceurexcue.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.991667" y="0.995" />
+                            <point x="0.00833333" y="0.995" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spVitoria" sid="104666065932078">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="737954936635716" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\tiago.parente\Downloads\drive-download-20170201T133247Z\REXvitória.png">
+                        <collision-poly>
+                            <point x="0.0141509" y="0.0155039" />
+                            <point x="0.518868" y="0.00775194" />
+                            <point x="0.995283" y="0.0620155" />
+                            <point x="0.995283" y="0.926357" />
+                            <point x="0.518868" y="0.996124" />
+                            <point x="0.00943396" y="0.98062" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spSuba" sid="429112651329267">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="817722322132302" speed="5">
+                    <frame duration="1" hotspotX="0.514423" hotspotY="0.47619" original-source="C:\Users\tiago.parente\Downloads\drive-download-20170201T133247Z\RexVOLTAR.png">
+                        <collision-poly>
+                            <point x="0.173077" y="0.261905" />
+                            <point x="0.514423" y="0.222222" />
+                            <point x="0.879808" y="0.222222" />
+                            <point x="0.995192" y="0.468254" />
+                            <point x="0.913462" y="0.777778" />
+                            <point x="0.514423" y="0.777778" />
+                            <point x="0.153846" y="0.714286" />
+                            <point x="0.0144231" y="0.468254" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>

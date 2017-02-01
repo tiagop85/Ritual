@@ -10,7 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">SPLASH_SCREEN</layout>
+        <layout order="0">SPLASH_SCREEN</layout>
+        <layout active="1" order="1">MAIN_GAME</layout>
+        <event-sheet order="2">GAME_EVENTS</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -31,7 +33,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/spAndaime/" />
         <folder expanded="1" path="animation-folder/spTamborEsq/" />
-        <folder expanded="1" path="animation-folder/spTempStart/" />
+        <folder expanded="1" path="animation-folder/spStart/" />
         <folder expanded="1" path="animation-folder/spJogador/" />
         <folder expanded="1" path="animation-folder/spTamborDir/" />
         <folder expanded="1" path="animation-folder/spObjetoCodigo/" />
@@ -45,5 +47,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/spBordaSuperior/" />
         <folder expanded="1" path="animation-folder/spTeto/" />
         <folder expanded="1" path="animation-folder/BtVoltar/" />
+        <folder expanded="1" path="animation-folder/spDerrota/" />
+        <folder expanded="1" path="animation-folder/spPiramide/" />
+        <folder expanded="1" path="animation-folder/spFundo/" />
+        <folder expanded="1" path="animation-folder/spVitoria/" />
+        <folder expanded="1" path="animation-folder/spSuba/" />
     </folders-expanded>
 </c2uistate>
