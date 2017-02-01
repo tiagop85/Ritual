@@ -8,7 +8,7 @@
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>34zvmmlx2prlp</unique-id>
-    <saved-with-version>24100</saved-with-version>
+    <saved-with-version>24200</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
@@ -33,6 +33,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>SPLASH_SCREEN</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -218,7 +219,7 @@
                     <frame duration="1" hotspotX="0.500864" hotspotY="0.502304" />
                     <frame duration="1" hotspotX="0.500864" hotspotY="0.502304" />
                     <frame duration="1" hotspotX="0.500864" hotspotY="0.502304" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.500329" />
+                    <frame duration="1" hotspotX="0.500864" hotspotY="0.502304" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -329,6 +330,26 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="TxPlay" sid="468679187704753">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TxSettings" sid="778542995411083">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TxCredits" sid="648582597258359">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TxTituloCreditos" sid="129860818309844">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="BtVoltar" sid="795229080702648">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="301160939847596" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="fmTambor" plugin-id="Sprite" sid="284777844382716">
@@ -340,10 +361,16 @@
     </families>
     <layout-folder>
         <layout>MAIN_GAME.xml</layout>
+        <layout>MAIN_MENU.xml</layout>
+        <layout>SPLASH_SCREEN.xml</layout>
+        <layout>SETTINGS.xml</layout>
+        <layout>CREDITS.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>GAME_EVENTS.xml</event-sheet>
         <event-sheet>NAVIGATION.xml</event-sheet>
+        <event-sheet>MENU_EVENTS.xml</event-sheet>
+        <event-sheet>SPLASH_EVENTS.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="4" />

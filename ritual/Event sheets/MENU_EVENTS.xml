@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MENU_EVENTS</name>
+    <events>
+        <event-block sid="208630242495448">
+            <conditions>
+                <condition id="3" name="On touched object" sid="291182825329772" type="Touch">
+                    <param id="0" name="Object">TxPlay</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="409849110766380" type="System">
+                    <param id="0" name="Layout">MAIN_GAME</param>
+                </action>
+                <action id="-16" name="Wait" sid="635714289002064" type="System">
+                    <param id="0" name="Seconds">0.100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="242133999839958">
+            <conditions>
+                <condition id="3" name="On touched object" sid="110896838774384" type="Touch">
+                    <param id="0" name="Object">TxCredits</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="870231274656921" type="System">
+                    <param id="0" name="Layout">CREDITS</param>
+                </action>
+                <action id="-16" name="Wait" sid="178531095818472" type="System">
+                    <param id="0" name="Seconds">0.100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="880184248803804">
+            <conditions>
+                <condition id="3" name="On touched object" sid="760726767588869" type="Touch">
+                    <param id="0" name="Object">TxSettings</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="123558820624830" type="System">
+                    <param id="0" name="Layout">SETTINGS</param>
+                </action>
+                <action id="-16" name="Wait" sid="581816538245809" type="System">
+                    <param id="0" name="Seconds">0.100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="237297120528430">
+            <conditions>
+                <condition id="3" name="On touched object" sid="851931847438715" type="Touch">
+                    <param id="0" name="Object">BtVoltar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="984233924156758" type="System">
+                    <param id="0" name="Layout">MAIN_MENU</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
