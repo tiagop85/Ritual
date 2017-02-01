@@ -11,7 +11,7 @@
         <variable constant="0" name="LIM_X1" sid="187078160590926" static="0" type="number">110</variable>
         <variable constant="0" name="LIM_X2" sid="929918891912199" static="0" type="number">370</variable>
         <variable constant="0" name="CODIGO_MAX" sid="717683184239700" static="0" type="number">5</variable>
-        <variable constant="0" name="CODIGO_MAX_ATUAL" sid="791027000298043" static="0" type="number">1</variable>
+        <variable constant="0" name="CODIGO_MAX_ATUAL" sid="791027000298043" static="0" type="number">5</variable>
         <variable constant="0" name="RESP_ATUAL" sid="341811714931883" static="0" type="number">0</variable>
         <variable constant="0" name="POS_X" sid="937900342604450" static="0" type="number">4</variable>
         <variable constant="0" name="VEL_BG_1" sid="209876311762322" static="0" type="number">100</variable>
