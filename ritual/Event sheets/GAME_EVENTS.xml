@@ -155,7 +155,11 @@
                             <param id="0" name="Pin to">tbGuia</param>
                             <param id="1" name="Mode">0</param>
                         </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="901215982943526" type="spFundo">
+                        <action behavior="Pin" id="0" name="Pin to object" sid="901215982943526" type="spFundo1">
+                            <param id="0" name="Pin to">tbGuia</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="327912455688025" type="spFundo2">
                             <param id="0" name="Pin to">tbGuia</param>
                             <param id="1" name="Mode">0</param>
                         </action>

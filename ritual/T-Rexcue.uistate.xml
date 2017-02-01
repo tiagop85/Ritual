@@ -10,9 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">SPLASH_SCREEN</layout>
-        <layout order="1">MAIN_GAME</layout>
-        <event-sheet active="1" order="2">GAME_EVENTS</event-sheet>
+        <layout active="1" order="0">MAIN_GAME</layout>
+        <event-sheet order="1">GAME_EVENTS</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -49,8 +48,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/BtVoltar/" />
         <folder expanded="1" path="animation-folder/spDerrota/" />
         <folder expanded="1" path="animation-folder/spPiramide/" />
-        <folder expanded="1" path="animation-folder/spFundo/" />
+        <folder expanded="1" path="animation-folder/spFundo1/" />
         <folder expanded="1" path="animation-folder/spVitoria/" />
         <folder expanded="1" path="animation-folder/spSuba/" />
+        <folder expanded="1" path="animation-folder/spFundo2/" />
     </folders-expanded>
 </c2uistate>

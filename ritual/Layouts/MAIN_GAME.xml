@@ -199,7 +199,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="spFundo" uid="32">
+                <instance type="spFundo2" uid="12">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -213,10 +213,35 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>238.5</x>
-                        <y>365</y>
+                        <y>901.5</y>
                         <z>0</z>
                         <width>521</width>
-                        <height>1266</height>
+                        <height>201</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="spFundo1" uid="32">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>238.5</x>
+                        <y>-162.5</y>
+                        <z>0</z>
+                        <width>521</width>
+                        <height>509</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -240,7 +265,7 @@
                         <x>239</x>
                         <y>309.563415527</y>
                         <z>0</z>
-                        <width>460</width>
+                        <width>644</width>
                         <height>1108</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -342,7 +367,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>117</x>
+                        <x>241.35458374</x>
                         <y>551</y>
                         <z>0</z>
                         <width>118.299995422</width>
