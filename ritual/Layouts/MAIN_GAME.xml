@@ -303,30 +303,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Button" uid="43">
-                    <properties>
-                        <type>Button</type>
-                        <text>OK</text>
-                        <tooltip></tooltip>
-                        <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                        <checked>No</checked>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>78</x>
-                        <y>421</y>
-                        <z>0</z>
-                        <width>72</width>
-                        <height>24</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
             </instances>
             <effects />
         </layer>
@@ -346,31 +322,6 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="spTamborEsq" uid="2">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Timer" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>54</x>
-                        <y>583.5</y>
-                        <z>0</z>
-                        <width>50</width>
-                        <height>77</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="spJogador" uid="8">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -392,36 +343,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>241.35458374</x>
-                        <y>551</y>
+                        <x>240.300292969</x>
+                        <y>556.949035645</y>
                         <z>0</z>
-                        <width>118.299995422</width>
-                        <height>176.095001221</height>
+                        <width>78.675605774</width>
+                        <height>113.916572571</height>
                         <depth>0</depth>
-                        <hotspotX>0.51145041</hotspotX>
-                        <hotspotY>0.589743614</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="spTamborDir" uid="10">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>423</x>
-                        <y>580.5</y>
-                        <z>0</z>
-                        <width>50</width>
-                        <height>71</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.503816783</hotspotX>
+                        <hotspotY>0.502564132</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -456,8 +385,8 @@
                         <x>899</x>
                         <y>967</y>
                         <z>0</z>
-                        <width>45</width>
-                        <height>45</height>
+                        <width>70</width>
+                        <height>70</height>
                         <depth>0</depth>
                         <hotspotX>0.491525412</hotspotX>
                         <hotspotY>0.517241359</hotspotY>
@@ -572,7 +501,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>453</x>
+                        <x>455</x>
                         <y>472</y>
                         <z>0</z>
                         <width>60.755039215</width>
@@ -581,6 +510,53 @@
                         <hotspotX>0.514423072</hotspotX>
                         <hotspotY>0.476190478</hotspotY>
                         <angle>1.570796371</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="spTamborDir" uid="10">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>434.001922607</x>
+                        <y>593.698486328</y>
+                        <z>0</z>
+                        <width>42</width>
+                        <height>41</height>
+                        <depth>0</depth>
+                        <hotspotX>0.510204077</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="spTamborEsq" uid="2">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Timer" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>45.741645813</x>
+                        <y>593.697753906</y>
+                        <z>0</z>
+                        <width>42</width>
+                        <height>41</height>
+                        <depth>0</depth>
+                        <hotspotX>0.510204077</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -640,35 +616,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>28</x>
-                        <y>560</y>
-                        <z>0</z>
-                        <width>50</width>
-                        <height>40</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="txTempTap" uid="7">
-                    <properties>
-                        <text>TAP</text>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <font>Arial,-24,400,0</font>
-                        <color>255,255,255</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>402</x>
-                        <y>560</y>
+                        <x>86</x>
+                        <y>609</y>
                         <z>0</z>
                         <width>50</width>
                         <height>40</height>
@@ -706,11 +655,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>136</x>
+                        <x>94</x>
                         <y>110</y>
                         <z>0</z>
-                        <width>45</width>
-                        <height>45</height>
+                        <width>70</width>
+                        <height>70</height>
                         <depth>0</depth>
                         <hotspotX>0.491525412</hotspotX>
                         <hotspotY>0.517241359</hotspotY>
@@ -745,11 +694,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>190</x>
+                        <x>166</x>
                         <y>110</y>
                         <z>0</z>
-                        <width>45</width>
-                        <height>45</height>
+                        <width>70</width>
+                        <height>70</height>
                         <depth>0</depth>
                         <hotspotX>0.491525412</hotspotX>
                         <hotspotY>0.517241359</hotspotY>
@@ -784,11 +733,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>248</x>
+                        <x>238</x>
                         <y>110</y>
                         <z>0</z>
-                        <width>45</width>
-                        <height>45</height>
+                        <width>70</width>
+                        <height>70</height>
                         <depth>0</depth>
                         <hotspotX>0.491525412</hotspotX>
                         <hotspotY>0.517241359</hotspotY>
@@ -823,11 +772,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>302</x>
+                        <x>310</x>
                         <y>110</y>
                         <z>0</z>
-                        <width>45</width>
-                        <height>45</height>
+                        <width>70</width>
+                        <height>70</height>
                         <depth>0</depth>
                         <hotspotX>0.491525412</hotspotX>
                         <hotspotY>0.517241359</hotspotY>
@@ -862,11 +811,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>353</x>
+                        <x>381</x>
                         <y>110</y>
                         <z>0</z>
-                        <width>45</width>
-                        <height>45</height>
+                        <width>70</width>
+                        <height>70</height>
                         <depth>0</depth>
                         <hotspotX>0.491525412</hotspotX>
                         <hotspotY>0.517241359</hotspotY>
@@ -980,6 +929,8 @@
             <instance-variables>
                 <FAIXA_A_TOCAR>0</FAIXA_A_TOCAR>
                 <FAIXA_TOCANDO>0</FAIXA_TOCANDO>
+                <MUSICA_BONUS>0</MUSICA_BONUS>
+                <FASE_ATUAL>3</FASE_ATUAL>
             </instance-variables>
         </instance>
     </nonworld-instances>

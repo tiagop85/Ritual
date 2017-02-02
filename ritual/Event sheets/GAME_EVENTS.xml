@@ -11,15 +11,19 @@
         <variable constant="1" name="CTSTATUS_VITORIA" sid="291279404625916" static="0" type="number">3</variable>
         <variable constant="0" name="LIM_X1" sid="187078160590926" static="0" type="number">110</variable>
         <variable constant="0" name="LIM_X2" sid="929918891912199" static="0" type="number">370</variable>
-        <variable constant="0" name="CODIGO_MAX" sid="717683184239700" static="0" type="number">5</variable>
+        <variable constant="1" name="CT_MAX_OBJETOS" sid="474746819791700" static="0" type="number">5</variable>
+        <variable constant="1" name="CT_CODIGO_MAX" sid="717683184239700" static="0" type="number">5</variable>
         <variable constant="0" name="CODIGO_MAX_ATUAL" sid="791027000298043" static="0" type="number">5</variable>
+        <variable constant="1" name="CT_TEMPO_RESP" sid="478744060753716" static="0" type="number">4</variable>
         <variable constant="0" name="RESP_ATUAL" sid="341811714931883" static="0" type="number">0</variable>
         <variable constant="0" name="POS_X" sid="937900342604450" static="0" type="number">4</variable>
         <variable constant="0" name="VEL_BG_1" sid="209876311762322" static="0" type="number">100</variable>
         <variable constant="0" name="VEL_BG_2" sid="197460785222325" static="0" type="number">150</variable>
         <variable constant="0" name="ACE_BG_1" sid="185869152804497" static="0" type="number">0</variable>
         <variable constant="0" name="ACE_BG_2" sid="437736346296352" static="0" type="number">400</variable>
-        <variable constant="0" name="VEL_IT_1" sid="830831248661449" static="0" type="number">100</variable>
+        <variable constant="0" name="VEL_IT_1" sid="830831248661449" static="0" type="number">150</variable>
+        <variable constant="0" name="VEL_IT_2" sid="489943553197249" static="0" type="number">200</variable>
+        <variable constant="0" name="CODIGO_BONUS" sid="385029467676204" static="0" type="text">ABCDEF</variable>
         <event-group description="" sid="628680457563050" title="ControleTela">
             <sub-events>
                 <comment>&gt; Game over por deixar de batucar</comment>
@@ -63,25 +67,66 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Set value" sid="615128501929106" type="System">
+                        <action id="-9" name="Set value" sid="620611476694719" type="System">
                             <param id="0" name="Variable">GAME_STATUS</param>
                             <param id="1" name="Value">CTSTATUS_VITORIA</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="880366361922632" type="spVitoria">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="419115907821082" type="tbGuia">
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="893160351312626" type="tbGuia">
                             <param id="0" name="State">0</param>
                         </action>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="379943263793429" type="spObjetoCodigo">
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="378156483129609" type="spObjetoCodigo">
                             <param id="0" name="State">0</param>
                         </action>
-                        <action id="-16" name="Wait" sid="997547391737685" type="System">
-                            <param id="0" name="Seconds">6</param>
-                        </action>
-                        <action id="-21" name="Reset global variables" sid="139009519738507" type="System" />
-                        <action id="-26" name="Restart layout" sid="389594162083776" type="System" />
                     </actions>
+                    <sub-events>
+                        <comment>&gt; Zerou o jogo</comment>
+                        <event-block sid="646301880199317">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="208082906722141" type="arControl">
+                                    <param id="0" name="Instance variable">FASE_ATUAL</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">CT_CODIGO_MAX+1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="438186962610684" type="spVitoria">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="845103669901874" type="arControl">
+                                    <param id="0" name="Instance variable">FASE_ATUAL</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="409702324177565" type="System">
+                                    <param id="0" name="Seconds">6</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="123530444045969" type="System">
+                                    <param id="0" name="Layout">MAIN_MENU</param>
+                                </action>
+                                <action id="-21" name="Reset global variables" sid="825186235917476" type="System" />
+                                <action id="-26" name="Restart layout" sid="746208368344722" type="System" />
+                            </actions>
+                        </event-block>
+                        <comment>&gt; Passou de fase</comment>
+                        <event-block sid="140840949572895">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="780214934913287" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="386819203288426" type="spVitoria">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-11" name="Add to" sid="471724087149945" type="arControl">
+                                    <param id="0" name="Instance variable">FASE_ATUAL</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="631304730746711" type="System">
+                                    <param id="0" name="Seconds">6</param>
+                                </action>
+                                <action id="-21" name="Reset global variables" sid="339848041863403" type="System" />
+                                <action id="-26" name="Restart layout" sid="347639100946317" type="System" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <comment>&gt; Texto Game Over</comment>
                 <event-block sid="824935718021395">
@@ -125,13 +170,13 @@
                         <condition id="-2" name="On start of layout" sid="258121833877620" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-10" name="Set value" sid="116860785076951" type="arControl">
-                            <param id="0" name="Instance variable">FAIXA_A_TOCAR</param>
-                            <param id="1" name="Value">CT_MUSICA_GAME</param>
-                        </action>
                         <action id="-9" name="Set value" sid="748558094391423" type="System">
                             <param id="0" name="Variable">GAME_STATUS</param>
                             <param id="1" name="Value">CTSTATUS_NOT_STARTED</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="467409039119831" type="System">
+                            <param id="0" name="Variable">CODIGO_MAX_ATUAL</param>
+                            <param id="1" name="Value">arControl.FASE_ATUAL</param>
                         </action>
                         <action behavior="Bullet" id="1" name="Set acceleration" sid="905590837952335" type="tbGuia">
                             <param id="0" name="Acceleration">ACE_BG_1</param>
@@ -168,11 +213,11 @@
                             <param id="0" name="Pin to">tbGuia</param>
                             <param id="1" name="Mode">0</param>
                         </action>
-                        <action id="4" name="Set animation" sid="500710234629793" type="spTamborDir">
+                        <action disabled="1" id="4" name="Set animation" sid="500710234629793" type="spTamborDir">
                             <param id="0" name="Animation">&quot;INVISIBLE&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="634589731436462" type="spTamborEsq">
+                        <action disabled="1" id="4" name="Set animation" sid="634589731436462" type="spTamborEsq">
                             <param id="0" name="Animation">&quot;INVISIBLE&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -197,6 +242,34 @@
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="606415523194606">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="662066700186295" type="arControl">
+                                    <param id="0" name="Instance variable">MUSICA_BONUS</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="167323689100201" type="arControl">
+                                    <param id="0" name="Instance variable">FAIXA_A_TOCAR</param>
+                                    <param id="1" name="Value">CT_MUSICA_GAME</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="276235456557016">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="365817134034259" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="464469669746742" type="arControl">
+                                    <param id="0" name="Instance variable">FAIXA_A_TOCAR</param>
+                                    <param id="1" name="Value">CT_MUSICA_GAME_BONUS</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <comment>&gt; GAME START</comment>
                 <event-block sid="260069918511977">
@@ -224,17 +297,17 @@
                             <param id="0" name="Visibility">0</param>
                         </action>
                         <action id="1" name="Set size" sid="580561638593486" type="arCode">
-                            <param id="0" name="Width">CODIGO_MAX</param>
+                            <param id="0" name="Width">CT_CODIGO_MAX</param>
                             <param id="1" name="Height">1</param>
                             <param id="2" name="Depth">1</param>
                         </action>
                         <action id="1" name="Set size" sid="845451089856587" type="arTemp">
-                            <param id="0" name="Width">CODIGO_MAX</param>
+                            <param id="0" name="Width">CT_CODIGO_MAX</param>
                             <param id="1" name="Height">1</param>
                             <param id="2" name="Depth">1</param>
                         </action>
                         <action id="1" name="Set size" sid="507470019763096" type="arResp">
-                            <param id="0" name="Width">CODIGO_MAX</param>
+                            <param id="0" name="Width">CT_CODIGO_MAX</param>
                             <param id="1" name="Height">1</param>
                             <param id="2" name="Depth">1</param>
                         </action>
@@ -354,7 +427,7 @@
                                     <param id="0" name="State">1</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="513056437590081" type="System">
-                                    <param id="0" name="Seconds">1.5</param>
+                                    <param id="0" name="Seconds">CT_TEMPO_RESP</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -380,181 +453,212 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="581506024570147" title="Movimentação" />
-        <comment>&gt; Andando</comment>
-        <event-block sid="783992414058772">
-            <conditions>
-                <condition id="2" name="Is in touch" sid="887293270567569" type="Touch" />
-                <condition id="-14" name="Compare variable" sid="457882444497754" type="System">
-                    <param id="0" name="Variable">GAME_STATUS</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">CTSTATUS_STARTED</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="619048146791235" type="spJogador">
-                    <param id="0" name="Animation">&quot;ANDANDO&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
+        <event-group description="" sid="581506024570147" title="Movimentação">
             <sub-events>
-                <comment>&gt; Mover pra esquerda</comment>
-                <event-block sid="172152129144571">
+                <comment>&gt; Andando</comment>
+                <event-block sid="783992414058772">
                     <conditions>
-                        <condition id="-8" name="Compare two values" sid="540746060478208" type="System">
-                            <param id="0" name="First value">Touch.X</param>
-                            <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Second value">LayoutWidth/2</param>
-                        </condition>
-                        <condition id="1" inverted="1" name="Is overlapping another object" sid="105479878452790" type="spJogador">
-                            <param id="0" name="Object">spTamborEsq</param>
+                        <condition id="2" name="Is in touch" sid="887293270567569" type="Touch" />
+                        <condition id="-14" name="Compare variable" sid="457882444497754" type="System">
+                            <param id="0" name="Variable">GAME_STATUS</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">CTSTATUS_STARTED</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-1" name="Set X" sid="388494691426482" type="spJogador">
-                            <param id="0" name="X">Self.X - POS_X</param>
+                        <action id="4" name="Set animation" sid="619048146791235" type="spJogador">
+                            <param id="0" name="Animation">&quot;ANDANDO&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="358258633517226">
+                        <comment>&gt; Mover pra esquerda</comment>
+                        <event-block sid="172152129144571">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="772611729821238" type="spJogador">
-                                    <param id="0" name="Instance variable">DIRECTION</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;DIREITA&quot;</param>
+                                <condition id="-8" name="Compare two values" sid="540746060478208" type="System">
+                                    <param id="0" name="First value">Touch.X</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Second value">LayoutWidth/2</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="105479878452790" type="spJogador">
+                                    <param id="0" name="Object">spTamborEsq</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-10" name="Set value" sid="613571207750657" type="spJogador">
-                                    <param id="0" name="Instance variable">DIRECTION</param>
-                                    <param id="1" name="Value">&quot;ESQUERDA&quot;</param>
+                                <action id="-1" name="Set X" sid="388494691426482" type="spJogador">
+                                    <param id="0" name="X">Self.X - POS_X</param>
                                 </action>
-                                <action id="7" name="Set mirrored" sid="220609332384409" type="spJogador">
-                                    <param id="0" name="State">0</param>
+                                <action id="-9" name="Set value" sid="743057846207616" type="System">
+                                    <param id="0" name="Variable">CODIGO_BONUS</param>
+                                    <param id="1" name="Value">mid(CODIGO_BONUS,1,5)&amp;&quot;E&quot;</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="358258633517226">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="772611729821238" type="spJogador">
+                                            <param id="0" name="Instance variable">DIRECTION</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;DIREITA&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="613571207750657" type="spJogador">
+                                            <param id="0" name="Instance variable">DIRECTION</param>
+                                            <param id="1" name="Value">&quot;ESQUERDA&quot;</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="220609332384409" type="spJogador">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>&gt; Mover pra direita</comment>
+                        <event-block sid="660646768464772">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="522893693867833" type="System">
+                                    <param id="0" name="First value">Touch.X</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">LayoutWidth/2</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="274998465416154" type="spJogador">
+                                    <param id="0" name="Object">spTamborDir</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="439055633597724" type="spJogador">
+                                    <param id="0" name="X">Self.X + POS_X</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="151234232378200" type="System">
+                                    <param id="0" name="Variable">CODIGO_BONUS</param>
+                                    <param id="1" name="Value">mid(CODIGO_BONUS,1,5)&amp;&quot;D&quot;</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="717626141502535">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="730512136211593" type="spJogador">
+                                            <param id="0" name="Instance variable">DIRECTION</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;ESQUERDA&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="266974999641381" type="spJogador">
+                                            <param id="0" name="Instance variable">DIRECTION</param>
+                                            <param id="1" name="Value">&quot;DIREITA&quot;</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="568332001121487" type="spJogador">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
-                <comment>&gt; Mover pra direita</comment>
-                <event-block sid="660646768464772">
+                <comment>&gt; Musica bonus</comment>
+                <event-block sid="446155466665799">
                     <conditions>
-                        <condition id="-8" name="Compare two values" sid="522893693867833" type="System">
-                            <param id="0" name="First value">Touch.X</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Second value">LayoutWidth/2</param>
-                        </condition>
-                        <condition id="1" inverted="1" name="Is overlapping another object" sid="274998465416154" type="spJogador">
-                            <param id="0" name="Object">spTamborDir</param>
+                        <condition id="-14" name="Compare variable" sid="868605105947575" type="System">
+                            <param id="0" name="Variable">CODIGO_BONUS</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;EEEDDD&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-1" name="Set X" sid="439055633597724" type="spJogador">
-                            <param id="0" name="X">Self.X + POS_X</param>
+                        <action id="-10" name="Set value" sid="818606874869770" type="arControl">
+                            <param id="0" name="Instance variable">FAIXA_A_TOCAR</param>
+                            <param id="1" name="Value">CT_MUSICA_GAME_BONUS</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="937042759951410" type="arControl">
+                            <param id="0" name="Instance variable">MUSICA_BONUS</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
-                    <sub-events>
-                        <event-block sid="717626141502535">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="730512136211593" type="spJogador">
-                                    <param id="0" name="Instance variable">DIRECTION</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;ESQUERDA&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="266974999641381" type="spJogador">
-                                    <param id="0" name="Instance variable">DIRECTION</param>
-                                    <param id="1" name="Value">&quot;DIREITA&quot;</param>
-                                </action>
-                                <action id="7" name="Set mirrored" sid="568332001121487" type="spJogador">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
+                </event-block>
+                <comment>&gt; Parado</comment>
+                <event-block sid="717138199918320">
+                    <conditions>
+                        <condition id="1" name="On any touch end" sid="599274628175906" type="Touch" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="858294780793250" type="spJogador">
+                            <param id="0" name="Animation">&quot;PARADO&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>&gt; Batucar</comment>
+                <event-block sid="185278824992561">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="773909778078241" type="Touch">
+                            <param id="0" name="Object">fmTambor</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="196829060390981" type="System">
+                            <param id="0" name="Variable">GAME_STATUS</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">CTSTATUS_STARTED</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="461289977965477" type="spJogador">
+                            <param id="0" name="Object">fmTambor</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="498556126037403" type="spLimiteSuperior">
+                            <param id="0" name="Object">spBordaSuperior</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="504989609705570" type="spJogador">
+                            <param id="0" name="Animation">&quot;ANDANDO&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="836144457726825" type="tbGuia">
+                            <param id="0" name="Speed">VEL_BG_2</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="672631599901500" type="tbGuia">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="998172259566231" type="txTempTap">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Timer" id="1" name="Stop timer" sid="360528668641904" type="spTamborEsq">
+                            <param id="0" name="Tag">&quot;tap&quot;</param>
+                        </action>
+                        <action behavior="Timer" id="0" name="Start timer" sid="145048985421179" type="spTamborEsq">
+                            <param id="0" name="Duration">0.25</param>
+                            <param id="1" name="Type">0</param>
+                            <param id="2" name="Tag">&quot;tap&quot;</param>
+                        </action>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="452295523957703" type="spObjetoCodigo">
+                            <param id="0" name="Speed">VEL_IT_2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>&gt; Fim do efeito da batucada</comment>
+                <event-block sid="310965368293125">
+                    <conditions>
+                        <condition behavior="Timer" id="0" name="On timer" sid="382590881477340" type="spTamborEsq">
+                            <param id="0" name="Tag">&quot;tap&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="313797410348591" type="tbGuia">
+                            <param id="0" name="Speed">VEL_BG_1</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="402374786348990" type="tbGuia">
+                            <param id="0" name="Angle">-90</param>
+                        </action>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="753502804731956" type="spObjetoCodigo">
+                            <param id="0" name="Speed">VEL_IT_1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="848763639167415" type="txTempTap">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <comment>&gt; Parado</comment>
-        <event-block sid="717138199918320">
-            <conditions>
-                <condition id="1" name="On any touch end" sid="599274628175906" type="Touch" />
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="858294780793250" type="spJogador">
-                    <param id="0" name="Animation">&quot;PARADO&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <comment>&gt; Batucar</comment>
-        <event-block sid="185278824992561">
-            <conditions>
-                <condition id="4" name="Is touching object" sid="773909778078241" type="Touch">
-                    <param id="0" name="Object">fmTambor</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="196829060390981" type="System">
-                    <param id="0" name="Variable">GAME_STATUS</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">CTSTATUS_STARTED</param>
-                </condition>
-                <condition id="1" name="Is overlapping another object" sid="461289977965477" type="spJogador">
-                    <param id="0" name="Object">fmTambor</param>
-                </condition>
-                <condition id="1" inverted="1" name="Is overlapping another object" sid="498556126037403" type="spLimiteSuperior">
-                    <param id="0" name="Object">spBordaSuperior</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="504989609705570" type="spJogador">
-                    <param id="0" name="Animation">&quot;ANDANDO&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action behavior="Bullet" id="0" name="Set speed" sid="836144457726825" type="tbGuia">
-                    <param id="0" name="Speed">VEL_BG_2</param>
-                </action>
-                <action behavior="Bullet" id="3" name="Set angle of motion" sid="672631599901500" type="tbGuia">
-                    <param id="0" name="Angle">90</param>
-                </action>
-                <action id="-15" name="Set visible" sid="998172259566231" type="txTempTap">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action behavior="Timer" id="1" name="Stop timer" sid="360528668641904" type="spTamborEsq">
-                    <param id="0" name="Tag">&quot;tap&quot;</param>
-                </action>
-                <action behavior="Timer" id="0" name="Start timer" sid="145048985421179" type="spTamborEsq">
-                    <param id="0" name="Duration">0.25</param>
-                    <param id="1" name="Type">0</param>
-                    <param id="2" name="Tag">&quot;tap&quot;</param>
-                </action>
-                <action behavior="Bullet" id="0" name="Set speed" sid="452295523957703" type="spObjetoCodigo">
-                    <param id="0" name="Speed">VEL_BG_2</param>
-                </action>
-            </actions>
-        </event-block>
-        <comment>&gt; Fim do efeito da batucada</comment>
-        <event-block sid="310965368293125">
-            <conditions>
-                <condition behavior="Timer" id="0" name="On timer" sid="382590881477340" type="spTamborEsq">
-                    <param id="0" name="Tag">&quot;tap&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Bullet" id="0" name="Set speed" sid="313797410348591" type="tbGuia">
-                    <param id="0" name="Speed">VEL_BG_1</param>
-                </action>
-                <action behavior="Bullet" id="3" name="Set angle of motion" sid="402374786348990" type="tbGuia">
-                    <param id="0" name="Angle">-90</param>
-                </action>
-                <action behavior="Bullet" id="0" name="Set speed" sid="753502804731956" type="spObjetoCodigo">
-                    <param id="0" name="Speed">VEL_IT_1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="848763639167415" type="txTempTap">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-            </actions>
-        </event-block>
+        </event-group>
         <event-group description="" sid="611387535092232" title="Código">
             <sub-events>
                 <comment>&gt; Pegando itens</comment>
@@ -710,7 +814,7 @@
                         </action>
                         <action id="-10" name="Set value" sid="216272149096961" type="spObjetoCodigo">
                             <param id="0" name="Instance variable">SKIN_MOEDA</param>
-                            <param id="1" name="Value">1+floor(random(7))</param>
+                            <param id="1" name="Value">1+floor(random(CT_MAX_OBJETOS-1))</param>
                         </action>
                     </actions>
                 </event-block>
