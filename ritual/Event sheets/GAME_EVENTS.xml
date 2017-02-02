@@ -213,6 +213,14 @@
                             <param id="0" name="Pin to">tbGuia</param>
                             <param id="1" name="Mode">0</param>
                         </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="537683088996745" type="spNuvens">
+                            <param id="0" name="Pin to">tbGuia</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="532912048526678" type="spPlataforma">
+                            <param id="0" name="Pin to">tbGuia</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
                         <action disabled="1" id="4" name="Set animation" sid="500710234629793" type="spTamborDir">
                             <param id="0" name="Animation">&quot;INVISIBLE&quot;</param>
                             <param id="1" name="From">1</param>
