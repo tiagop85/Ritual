@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GAME_EVENTS</name>
     <events>
+        <include>MUSIC_EVENTS</include>
         <variable constant="0" name="GAME_STATUS" sid="851310458617399" static="0" type="number">0</variable>
         <variable constant="1" name="ctSTATUS_NOT_STARTED" sid="119644672844439" static="0" type="number">0</variable>
         <variable constant="1" name="CTSTATUS_STARTED" sid="341735855487443" static="0" type="number">1</variable>
@@ -124,6 +125,10 @@
                         <condition id="-2" name="On start of layout" sid="258121833877620" type="System" />
                     </conditions>
                     <actions>
+                        <action id="-10" name="Set value" sid="116860785076951" type="arControl">
+                            <param id="0" name="Instance variable">FAIXA_A_TOCAR</param>
+                            <param id="1" name="Value">CT_MUSICA_GAME</param>
+                        </action>
                         <action id="-9" name="Set value" sid="748558094391423" type="System">
                             <param id="0" name="Variable">GAME_STATUS</param>
                             <param id="1" name="Value">CTSTATUS_NOT_STARTED</param>

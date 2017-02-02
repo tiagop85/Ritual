@@ -356,6 +356,7 @@
                     </properties>
                     <instance-variables>
                         <DIRECTION>DIREITA</DIRECTION>
+                        <NUMERO>0</NUMERO>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -945,6 +946,17 @@
                 <height>1</height>
                 <depth>1</depth>
             </properties>
+        </instance>
+        <instance type="arControl" uid="41">
+            <properties>
+                <width>1</width>
+                <height>1</height>
+                <depth>1</depth>
+            </properties>
+            <instance-variables>
+                <FAIXA_A_TOCAR>0</FAIXA_A_TOCAR>
+                <FAIXA_TOCANDO>0</FAIXA_TOCANDO>
+            </instance-variables>
         </instance>
     </nonworld-instances>
     <effects />

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MUSIC_EVENTS</name>
+    <events>
+        <variable constant="1" name="CT_MUSICA_MENU" sid="241633563991275" static="0" type="number">1</variable>
+        <variable constant="1" name="CT_MUSICA_GAME" sid="923378748920931" static="0" type="number">2</variable>
+        <event-block sid="364558196331276">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="216555684530872" type="arControl">
+                    <param id="0" name="Instance variable">FAIXA_A_TOCAR</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">arControl.FAIXA_TOCANDO</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="257478597171887">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="303930944779365" type="arControl">
+                            <param id="0" name="Instance variable">FAIXA_A_TOCAR</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">CT_MUSICA_MENU</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="940379200853794" type="arControl">
+                            <param id="0" name="Instance variable">FAIXA_TOCANDO</param>
+                            <param id="1" name="Value">CT_MUSICA_MENU</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="189153806439398" type="Audio" />
+                        <action id="0" name="Play" sid="514393954324871" type="Audio">
+                            <param id="0" name="Audio file">Untitled_Rhythm</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;music_menu&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="665992761236513">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="293864356556364" type="arControl">
+                            <param id="0" name="Instance variable">FAIXA_A_TOCAR</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">CT_MUSICA_GAME</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="463770145939822" type="arControl">
+                            <param id="0" name="Instance variable">FAIXA_TOCANDO</param>
+                            <param id="1" name="Value">CT_MUSICA_GAME</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="220172178320297" type="Audio" />
+                        <action id="0" name="Play" sid="350747396568904" type="Audio">
+                            <param id="0" name="Audio file">Carrapicho-Tic_Tic_Tac-x3yjfj</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;music_game&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="805286842683843">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="753069586122683" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Preload" sid="593345465092719" type="Audio">
+                    <param id="0" name="Audio file">Untitled_Rhythm</param>
+                </action>
+                <action id="4" name="Preload" sid="890717811787571" type="Audio">
+                    <param id="0" name="Audio file">Carrapicho-Tic_Tic_Tac-x3yjfj</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
