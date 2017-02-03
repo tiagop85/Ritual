@@ -11,10 +11,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">MAIN_GAME</layout>
-        <layout order="4">SPLASH_SCREEN</layout>
+        <layout order="4">CREDITS</layout>
+        <layout order="5">SPLASH_SCREEN</layout>
+        <layout order="6">MAIN_MENU</layout>
         <event-sheet order="1">GAME_EVENTS</event-sheet>
-        <event-sheet order="2">MUSIC_EVENTS</event-sheet>
-        <event-sheet active="1" order="3">SPLASH_EVENTS</event-sheet>
+        <event-sheet active="1" order="2">MUSIC_EVENTS</event-sheet>
+        <event-sheet order="3">SPLASH_EVENTS</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -42,7 +44,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/spFogo/" />
         <folder expanded="1" path="animation-folder/spBordaInferior/" />
         <folder expanded="1" path="animation-folder/spLimiteInferior/" />
-        <folder expanded="1" path="animation-folder/Sprite2/" />
         <folder expanded="1" path="animation-folder/spChao/" />
         <folder expanded="1" path="animation-folder/spLimiteInferiorMax/" />
         <folder expanded="1" path="animation-folder/spLimiteSuperior/" />
@@ -55,5 +56,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/spVitoria/" />
         <folder expanded="1" path="animation-folder/spSuba/" />
         <folder expanded="1" path="animation-folder/spFundo2/" />
+        <folder expanded="1" path="animation-folder/Play/" />
+        <folder expanded="1" path="animation-folder/Creditos/" />
+        <folder expanded="1" path="animation-folder/Som/" />
     </folders-expanded>
 </c2uistate>
