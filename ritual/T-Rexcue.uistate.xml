@@ -10,6 +10,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
+<<<<<<< HEAD
         <layout order="0">MAIN_GAME</layout>
         <layout order="4">CREDITS</layout>
         <layout order="5">SPLASH_SCREEN</layout>
@@ -17,14 +18,25 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="1">GAME_EVENTS</event-sheet>
         <event-sheet active="1" order="2">MUSIC_EVENTS</event-sheet>
         <event-sheet order="3">SPLASH_EVENTS</event-sheet>
+=======
+        <layout active="1" order="0">MAIN_GAME</layout>
+<<<<<<< HEAD
+        <layout order="1">CREDITS</layout>
+=======
+        <layout order="4">SPLASH_SCREEN</layout>
+        <event-sheet order="1">GAME_EVENTS</event-sheet>
+        <event-sheet order="2">MUSIC_EVENTS</event-sheet>
+        <event-sheet order="3">SPLASH_EVENTS</event-sheet>
+>>>>>>> 3544388ede1dcd2173885d90c87086ac234a5b80
+>>>>>>> 1954fd3a6c47c298ab48b84334ddc1241249c53e
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
         <property expanded="1" name="Project settings" />
-        <property expanded="1" name="Window Size" />
+        <property expanded="0" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
-    <families-expanded root="0">
+    <families-expanded root="1">
         <family expanded="0" name="fmTambor" />
     </families-expanded>
     <folders-expanded>
@@ -34,7 +46,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
-        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/spAndaime/" />
         <folder expanded="1" path="animation-folder/spTamborEsq/" />
         <folder expanded="1" path="animation-folder/spStart/" />
@@ -56,8 +68,21 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/spVitoria/" />
         <folder expanded="1" path="animation-folder/spSuba/" />
         <folder expanded="1" path="animation-folder/spFundo2/" />
+<<<<<<< HEAD
         <folder expanded="1" path="animation-folder/Play/" />
         <folder expanded="1" path="animation-folder/Creditos/" />
         <folder expanded="1" path="animation-folder/Som/" />
+=======
+<<<<<<< HEAD
+        <folder expanded="1" path="animation-folder/Play/" />
+        <folder expanded="1" path="animation-folder/Reset/" />
+        <folder expanded="1" path="animation-folder/BlackgroundMenu/" />
+        <folder expanded="1" path="animation-folder/Creditos/" />
+        <folder expanded="1" path="animation-folder/Som/" />
+=======
+        <folder expanded="1" path="animation-folder/spNuvens/" />
+        <folder expanded="1" path="animation-folder/spPlataforma/" />
+>>>>>>> 3544388ede1dcd2173885d90c87086ac234a5b80
+>>>>>>> 1954fd3a6c47c298ab48b84334ddc1241249c53e
     </folders-expanded>
 </c2uistate>

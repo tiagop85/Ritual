@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="693423786555165">
+        <layer name="Blackground" sid="693423786555165">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -29,10 +29,19 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+<<<<<<< HEAD
                 <instance type="Menu" uid="43">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
+=======
+                <instance type="BlackgroundMenu" uid="46">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+>>>>>>> 1954fd3a6c47c298ab48b84334ddc1241249c53e
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -49,7 +58,48 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+<<<<<<< HEAD
                 <instance type="Play" uid="44">
+=======
+            </instances>
+            <effects />
+        </layer>
+        <layer name="BlackgroundUp" sid="434669537956445">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances />
+            <effects />
+        </layer>
+        <layer name="Button" sid="448856455463661">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Play" uid="47">
+>>>>>>> 1954fd3a6c47c298ab48b84334ddc1241249c53e
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -59,11 +109,19 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
+<<<<<<< HEAD
                         <x>238</x>
                         <y>377</y>
                         <z>0</z>
                         <width>123</width>
                         <height>128</height>
+=======
+                        <x>236</x>
+                        <y>376</y>
+                        <z>0</z>
+                        <width>130</width>
+                        <height>130</height>
+>>>>>>> 1954fd3a6c47c298ab48b84334ddc1241249c53e
                         <depth>0</depth>
                         <hotspotX>0.504065037</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -71,7 +129,11 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+<<<<<<< HEAD
                 <instance type="Creditos" uid="45">
+=======
+                <instance type="Creditos" uid="48">
+>>>>>>> 1954fd3a6c47c298ab48b84334ddc1241249c53e
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -81,11 +143,19 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
+<<<<<<< HEAD
                         <x>164</x>
                         <y>506</y>
                         <z>0</z>
                         <width>100</width>
                         <height>105</height>
+=======
+                        <x>161</x>
+                        <y>506</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>100</height>
+>>>>>>> 1954fd3a6c47c298ab48b84334ddc1241249c53e
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.504347801</hotspotY>
@@ -93,7 +163,11 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+<<<<<<< HEAD
                 <instance type="Som" uid="46">
+=======
+                <instance type="Som" uid="49">
+>>>>>>> 1954fd3a6c47c298ab48b84334ddc1241249c53e
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -103,11 +177,19 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
+<<<<<<< HEAD
                         <x>309</x>
                         <y>506</y>
                         <z>0</z>
                         <width>100</width>
                         <height>105</height>
+=======
+                        <x>307</x>
+                        <y>506</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>100</height>
+>>>>>>> 1954fd3a6c47c298ab48b84334ddc1241249c53e
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

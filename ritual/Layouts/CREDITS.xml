@@ -2,7 +2,7 @@
 <c2layout>
     <name>CREDITS</name>
     <sid>809469387189288</sid>
-    <event-sheet>MENU_EVENTS</event-sheet>
+    <event-sheet>Creditos</event-sheet>
     <size>
         <width>480</width>
         <height>800</height>
@@ -29,7 +29,11 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+<<<<<<< HEAD
                 <instance type="Credito" uid="28">
+=======
+                <instance type="TiledBackground" uid="22">
+>>>>>>> 1954fd3a6c47c298ab48b84334ddc1241249c53e
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -52,7 +56,11 @@
             </instances>
             <effects />
         </layer>
+<<<<<<< HEAD
         <layer name="button" sid="896236664515480">
+=======
+        <layer name="Button" sid="165110806698205">
+>>>>>>> 1954fd3a6c47c298ab48b84334ddc1241249c53e
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -79,10 +87,17 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>240</x>
+<<<<<<< HEAD
                         <y>735</y>
                         <z>0</z>
                         <width>100</width>
                         <height>105</height>
+=======
+                        <y>731</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>100</height>
+>>>>>>> 1954fd3a6c47c298ab48b84334ddc1241249c53e
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.503937006</hotspotY>

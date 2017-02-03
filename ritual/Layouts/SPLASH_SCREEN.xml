@@ -29,7 +29,11 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+<<<<<<< HEAD
                 <instance type="SplashScreen" uid="7">
+=======
+                <instance type="FundoSplashScreen" uid="43">
+>>>>>>> 1954fd3a6c47c298ab48b84334ddc1241249c53e
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
