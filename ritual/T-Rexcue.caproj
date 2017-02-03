@@ -12,7 +12,10 @@
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+<<<<<<< HEAD
+=======
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
+>>>>>>> 3544388ede1dcd2173885d90c87086ac234a5b80
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -172,6 +175,12 @@
                 <animation framecount="4" loop="1" name="PARADO" pingpong="0" repeatcount="1" repeatto="0" sid="145774217231409" speed="5">
                     <frame duration="1" hotspotX="0.503817" hotspotY="0.502564">
                         <collision-poly>
+<<<<<<< HEAD
+                            <point x="0" y="0.0108696" />
+                            <point x="0.990476" y="0.0108696" />
+                            <point x="0.990476" y="0.994565" />
+                            <point x="0" y="0.994565" />
+=======
                             <point x="0.244275" y="0.164103" />
                             <point x="0.496183" y="0.138462" />
                             <point x="0.816794" y="0.123077" />
@@ -192,10 +201,25 @@
                             <point x="0.496183" y="0.958974" />
                             <point x="0.183206" y="0.876923" />
                             <point x="0.290076" y="0.497436" />
+>>>>>>> 3544388ede1dcd2173885d90c87086ac234a5b80
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.503817" hotspotY="0.502564">
                         <collision-poly>
+<<<<<<< HEAD
+                            <point x="0" y="0" />
+                            <point x="0.990476" y="0" />
+                            <point x="0.990476" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.51145" hotspotY="0.589744">
+                        <collision-poly>
+                            <point x="0" y="0.0271739" />
+                            <point x="1" y="0.0271739" />
+                            <point x="1" y="0.978261" />
+                            <point x="0" y="0.978261" />
+=======
                             <point x="0.282443" y="0.189744" />
                             <point x="0.496183" y="0.14359" />
                             <point x="0.832061" y="0.112821" />
@@ -204,6 +228,7 @@
                             <point x="0.496183" y="0.94359" />
                             <point x="0.198473" y="0.866667" />
                             <point x="0.290076" y="0.497436" />
+>>>>>>> 3544388ede1dcd2173885d90c87086ac234a5b80
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.503817" hotspotY="0.502564">
@@ -754,6 +779,75 @@
                 </animation>
             </animation-folder>
         </object-type>
+<<<<<<< HEAD
+        <object-type name="Play" sid="363457847134308">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="381786271105373" speed="5">
+                    <frame duration="1" hotspotX="0.504065" hotspotY="0.5" original-source="C:\Users\link_\Downloads\PLAYrex (2).png">
+                        <collision-poly>
+                            <point x="0.106253" y="0.143139" />
+                            <point x="0.512195" y="0.00230982" />
+                            <point x="0.853097" y="0.143139" />
+                            <point x="0.988225" y="0.514471" />
+                            <point x="0.861227" y="0.841236" />
+                            <point x="0.471545" y="0.982065" />
+                            <point x="0.146903" y="0.849048" />
+                            <point x="0" y="0.522284" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Reset" sid="371878723454443">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="190951685596546" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503759" original-source="C:\Users\link_\Downloads\REXreiniciar.png">
+                        <collision-poly>
+                            <point x="0.223881" y="0.225564" />
+                            <point x="0.5" y="0.112782" />
+                            <point x="0.776119" y="0.225564" />
+                            <point x="0.91791" y="0.496241" />
+                            <point x="0.820895" y="0.819549" />
+                            <point x="0.5" y="0.969925" />
+                            <point x="0.179104" y="0.819549" />
+                            <point x="0.0820896" y="0.496241" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FundoSplashScreen" sid="873084485308225">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\link_\Downloads\RexSplash.png" />
+        </object-type>
+        <object-type name="Audio" sid="688631848014798">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="BlackgroundMenu" sid="779577186695341">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="825692616051060" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\link_\Downloads\IMG_20170202_090457.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Creditos" sid="236713453909841">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="297404928862639" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504348" original-source="C:\Users\link_\Downloads\RexCRÉDITOS.png">
+                        <collision-poly>
+                            <point x="0.0818182" y="0.179887" />
+                            <point x="0.504545" y="0" />
+                            <point x="0.909091" y="0.182457" />
+                            <point x="1" y="0.494367" />
+                            <point x="0.9" y="0.802722" />
+                            <point x="0.504545" y="1" />
+                            <point x="0.127273" y="0.8462" />
+                            <point x="0" y="0.494367" />
+=======
         <object-type global="1" name="arControl" sid="589447338826499">
             <plugin id="Arr" />
             <instance-variables>
@@ -872,6 +966,9 @@
         <event-sheet>NAVIGATION.xml</event-sheet>
         <event-sheet>MENU_EVENTS.xml</event-sheet>
         <event-sheet>SPLASH_EVENTS.xml</event-sheet>
+<<<<<<< HEAD
+        <event-sheet>Creditos.xml</event-sheet>
+=======
         <event-sheet>MUSIC_EVENTS.xml</event-sheet>
         <event-sheet>CREDITS.xml</event-sheet>
     </event-folder>
@@ -882,7 +979,11 @@
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
+<<<<<<< HEAD
+        <global-instance type="Audio" uid="44">
+=======
         <global-instance type="Audio" uid="42">
+>>>>>>> 3544388ede1dcd2173885d90c87086ac234a5b80
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -897,6 +998,14 @@
             </properties>
         </global-instance>
     </global-instances>
+<<<<<<< HEAD
+    <sounds-folder>
+        <file name="button.ogg" />
+        <file name="menu.ogg" />
+        <file name="jogo.ogg" />
+    </sounds-folder>
+    <music-folder />
+=======
     <sounds-folder />
     <music-folder>
         <file name="Carrapicho-Tic_Tic_Tac-x3yjfj.ogg" />
@@ -914,6 +1023,7 @@
         <file name="vitoria.ogg" />
         <file name="vitoriaDinossauro.ogg" />
     </music-folder>
+>>>>>>> 3544388ede1dcd2173885d90c87086ac234a5b80
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />

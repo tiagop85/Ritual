@@ -2,7 +2,7 @@
 <c2layout>
     <name>CREDITS</name>
     <sid>809469387189288</sid>
-    <event-sheet>MENU_EVENTS</event-sheet>
+    <event-sheet>Creditos</event-sheet>
     <size>
         <width>480</width>
         <height>800</height>
