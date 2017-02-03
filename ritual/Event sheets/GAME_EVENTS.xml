@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GAME_EVENTS</name>
     <events>
+        <variable constant="0" name="a" sid="252659231937883" static="0" type="number">0</variable>
         <variable constant="0" name="GAME_STATUS" sid="851310458617399" static="0" type="number">0</variable>
         <variable constant="1" name="ctSTATUS_NOT_STARTED" sid="119644672844439" static="0" type="number">0</variable>
         <variable constant="1" name="CTSTATUS_STARTED" sid="341735855487443" static="0" type="number">1</variable>
@@ -675,50 +676,6 @@
                         </action>
                     </actions>
                 </event-block>
-                <comment>&gt; Objetos caindo</comment>
-                <event-block sid="303964236489190">
-                    <conditions>
-                        <condition id="-6" name="Every X seconds" sid="611064829331013" type="System">
-                            <param id="0" name="Interval (seconds)">2.5</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="332733441334533" type="System">
-                            <param id="0" name="Variable">GAME_STATUS</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">CTSTATUS_STARTED</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Create object" sid="281407335892065" type="System">
-                            <param id="0" name="Object to create">spObjetoCodigo</param>
-                            <param id="1" name="Layer">2</param>
-                            <param id="2" name="X">LIM_X1+floor(random(LIM_X2-LIM_X1))</param>
-                            <param id="3" name="Y">0</param>
-                        </action>
-                        <action behavior="Bullet" id="0" name="Set speed" sid="348615893412646" type="spObjetoCodigo">
-                            <param id="0" name="Speed">VEL_IT_1</param>
-                        </action>
-                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="513102665066577" type="spObjetoCodigo">
-                            <param id="0" name="Angle">90</param>
-                        </action>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="704912198214261" type="spObjetoCodigo">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="216272149096961" type="spObjetoCodigo">
-                            <param id="0" name="Instance variable">SKIN_MOEDA</param>
-                            <param id="1" name="Value">1+floor(random(7))</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="906900514595328">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="676832867460917" type="spObjetoCodigo">
-                            <param id="0" name="Object">spChao</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="844229700465498" type="spObjetoCodigo" />
-                    </actions>
-                </event-block>
                 <comment>&gt; Skin das moedas</comment>
                 <event-block sid="377289162659466">
                     <conditions>
@@ -887,5 +844,49 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <comment>&gt; Objetos caindo - Codigos</comment>
+        <event-block sid="810526798038759">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="347904349383935" type="System">
+                    <param id="0" name="Interval (seconds)">2.5</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="642507314697513" type="System">
+                    <param id="0" name="Variable">GAME_STATUS</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">CTSTATUS_STARTED</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="799338761616982" type="System">
+                    <param id="0" name="Object to create">spObjetoCodigo</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">LIM_X1+floor(random(LIM_X2-LIM_X1))</param>
+                    <param id="3" name="Y">0</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="827482782230412" type="spObjetoCodigo">
+                    <param id="0" name="Speed">VEL_IT_1</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="149891894802829" type="spObjetoCodigo">
+                    <param id="0" name="Angle">90</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="344280747259265" type="spObjetoCodigo">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="706325781280196" type="spObjetoCodigo">
+                    <param id="0" name="Instance variable">SKIN_MOEDA</param>
+                    <param id="1" name="Value">1+floor(random(7))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="212655985473879">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="966821405023571" type="spObjetoCodigo">
+                    <param id="0" name="Object">spChao</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="331401034716912" type="spObjetoCodigo" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

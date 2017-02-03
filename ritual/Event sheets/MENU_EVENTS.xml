@@ -3,13 +3,24 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>MENU_EVENTS</name>
     <events>
+        <variable constant="0" name="Som" sid="696766472778384" static="0" type="number">0</variable>
         <event-block sid="208630242495448">
             <conditions>
                 <condition id="3" name="On touched object" sid="291182825329772" type="Touch">
-                    <param id="0" name="Object">TxPlay</param>
+                    <param id="0" name="Object">Play</param>
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="655759804904008" type="Audio">
+                    <param id="0" name="Audio file">button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="380142328953640" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="33" name="Stop all" sid="350282637063054" type="Audio" />
                 <action id="-2" name="Go to layout" sid="409849110766380" type="System">
                     <param id="0" name="Layout">MAIN_GAME</param>
                 </action>
@@ -21,10 +32,16 @@
         <event-block sid="242133999839958">
             <conditions>
                 <condition id="3" name="On touched object" sid="110896838774384" type="Touch">
-                    <param id="0" name="Object">TxCredits</param>
+                    <param id="0" name="Object">Creditos</param>
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="399919205064270" type="Audio">
+                    <param id="0" name="Audio file">button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="870231274656921" type="System">
                     <param id="0" name="Layout">CREDITS</param>
                 </action>
@@ -36,29 +53,113 @@
         <event-block sid="880184248803804">
             <conditions>
                 <condition id="3" name="On touched object" sid="760726767588869" type="Touch">
-                    <param id="0" name="Object">TxSettings</param>
+                    <param id="0" name="Object">Som</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="123558820624830" type="System">
-                    <param id="0" name="Layout">SETTINGS</param>
-                </action>
-                <action id="-16" name="Wait" sid="581816538245809" type="System">
-                    <param id="0" name="Seconds">0.100</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="715756790351155">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="414496104162147" type="System">
+                            <param id="0" name="Variable">Som</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="500063048266651" type="System">
+                            <param id="0" name="Variable">Som</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="8" name="Set silent" sid="123558820624830" type="Audio">
+                            <param id="0" name="Mode">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="227492389392314" type="Som">
+                            <param id="0" name="Animation">&quot;sem&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="581816538245809" type="System">
+                            <param id="0" name="Seconds">0.100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="602272839817177">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="788641335343979" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="8" name="Set silent" sid="106167728603474" type="Audio">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="161514347172379" type="Audio" />
+                        <action id="0" name="Play" sid="905576299387127" type="Audio">
+                            <param id="0" name="Audio file">button</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="107711396629082" type="System">
+                            <param id="0" name="Seconds">0.100</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="889357664017579" type="Som">
+                            <param id="0" name="Animation">&quot;som&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="857718775837018" type="System">
+                            <param id="0" name="Variable">Som</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="311719185957408" type="Audio">
+                            <param id="0" name="Audio file">menu</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
-        <event-block sid="237297120528430">
+        <event-block sid="570303524805317">
             <conditions>
-                <condition id="3" name="On touched object" sid="851931847438715" type="Touch">
-                    <param id="0" name="Object">BtVoltar</param>
-                </condition>
+                <condition id="-2" name="On start of layout" sid="604373779014378" type="System" />
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="984233924156758" type="System">
-                    <param id="0" name="Layout">MAIN_MENU</param>
+                <action id="33" name="Stop all" sid="872321531918334" type="Audio" />
+                <action id="0" name="Play" sid="742715869895982" type="Audio">
+                    <param id="0" name="Audio file">menu</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="750232541336598">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="581939808199533" type="System">
+                            <param id="0" name="Variable">Som</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="786814196021953" type="Som">
+                            <param id="0" name="Animation">&quot;som&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="155418420665776">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="391221809186024" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="598996875308050" type="Som">
+                            <param id="0" name="Animation">&quot;sem&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
