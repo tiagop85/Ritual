@@ -232,6 +232,14 @@
                                 </action>
                                 <action id="-21" name="Reset global variables" sid="825186235917476" type="System" />
                                 <action id="-26" name="Restart layout" sid="746208368344722" type="System" />
+                                <action id="-3" name="Set position" sid="362363022838254" type="Play">
+                                    <param id="0" name="X">130</param>
+                                    <param id="1" name="Y">425</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="393891101691519" type="Home">
+                                    <param id="0" name="X">340</param>
+                                    <param id="1" name="Y">450</param>
+                                </action>
                             </actions>
                         </event-block>
                         <comment>&gt; Passou de fase</comment>
