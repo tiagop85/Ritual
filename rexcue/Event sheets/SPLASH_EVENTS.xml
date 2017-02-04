@@ -9,12 +9,11 @@
                 <condition id="-2" name="On start of layout" sid="363724262933412" type="System" />
             </conditions>
             <actions>
-                <action id="-10" name="Set value" sid="815745286973681" type="arControl">
-                    <param id="0" name="Instance variable">FAIXA_A_TOCAR</param>
-                    <param id="1" name="Value">CT_MUSICA_MENU</param>
+                <action behavior="Fade" id="4" name="Set fade-out time" sid="648306436923970" type="SplashScreen">
+                    <param id="0" name="Fade-out time">5</param>
                 </action>
                 <action id="-16" name="Wait" sid="490196622249816" type="System">
-                    <param id="0" name="Seconds">5.0</param>
+                    <param id="0" name="Seconds">5</param>
                 </action>
                 <action id="-2" name="Go to layout" sid="765093413417638" type="System">
                     <param id="0" name="Layout">MAIN_MENU</param>

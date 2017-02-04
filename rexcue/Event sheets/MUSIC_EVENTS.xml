@@ -98,6 +98,45 @@
                 <action id="4" name="Preload" sid="659839489983763" type="Audio">
                     <param id="0" name="Audio file">Carrapicho-Tic_Tic_Tac-x3yjfj</param>
                 </action>
+                <action id="4" name="Preload" sid="811201338031524" type="Audio">
+                    <param id="0" name="Audio file">button</param>
+                </action>
+                <action id="4" name="Preload" sid="724582032390429" type="Audio">
+                    <param id="0" name="Audio file">chegadaNave</param>
+                </action>
+                <action id="4" name="Preload" sid="520278543072253" type="Audio">
+                    <param id="0" name="Audio file">derrota</param>
+                </action>
+                <action id="4" name="Preload" sid="155539888452472" type="Audio">
+                    <param id="0" name="Audio file">derrotaDinossauro</param>
+                </action>
+                <action id="4" name="Preload" sid="231722522563225" type="Audio">
+                    <param id="0" name="Audio file">itemCerto</param>
+                </action>
+                <action id="4" name="Preload" sid="296837947694160" type="Audio">
+                    <param id="0" name="Audio file">itemErrado</param>
+                </action>
+                <action id="4" name="Preload" sid="997331883912216" type="Audio">
+                    <param id="0" name="Audio file">lava</param>
+                </action>
+                <action id="4" name="Preload" sid="390290815623422" type="Audio">
+                    <param id="0" name="Audio file">lavaDinossauro</param>
+                </action>
+                <action id="4" name="Preload" sid="575429233222678" type="Audio">
+                    <param id="0" name="Audio file">tambor</param>
+                </action>
+                <action id="4" name="Preload" sid="187610806415393" type="Audio">
+                    <param id="0" name="Audio file">vitoria</param>
+                </action>
+                <action id="4" name="Preload" sid="146079100887839" type="Audio">
+                    <param id="0" name="Audio file">vitoriaDinossauro</param>
+                </action>
+                <action id="4" name="Preload" sid="993277937687853" type="Audio">
+                    <param id="0" name="Audio file">263889_jarredgibb_rattle-drum</param>
+                </action>
+                <action id="4" name="Preload" sid="205418694322312" type="Audio">
+                    <param id="0" name="Audio file">vento</param>
+                </action>
             </actions>
         </event-block>
     </events>

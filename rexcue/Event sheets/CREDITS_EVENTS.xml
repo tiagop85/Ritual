@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>CREDITS_EVENTS</name>
+    <events>
+        <variable constant="0" name="Pagina" sid="832121703841459" static="0" type="number">0</variable>
+        <event-block sid="724247500632178">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="225662190072152" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">BtVoltar</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="752429347485056" type="System">
+                    <param id="0" name="Variable">Pagina</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="261486498467462" type="Audio">
+                    <param id="0" name="Audio file">button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="342932397033364" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="507844891355601" type="System">
+                    <param id="0" name="Layout">MAIN_MENU</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="876538618219953">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="503054891420682" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">BtVoltar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="572799341014479" type="Audio">
+                    <param id="0" name="Audio file">button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="621262294026591" type="System">
+                    <param id="0" name="Variable">Pagina</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="730864318796299">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="508498231997370" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">BtIr</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="536202053632654" type="Audio">
+                    <param id="0" name="Audio file">button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Add to" sid="852107721736343" type="System">
+                    <param id="0" name="Variable">Pagina</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="375997893587468">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="638937870533281" type="System">
+                    <param id="0" name="Variable">Pagina</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="484858503767515" type="Credito">
+                    <param id="0" name="Animation">&quot;nome&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="581139314916806" type="BtIr">
+                    <param id="0" name="X">405</param>
+                    <param id="1" name="Y">759</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="282056049400175">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="975804057516851" type="System">
+                    <param id="0" name="Variable">Pagina</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="958020444720667" type="Credito">
+                    <param id="0" name="Animation">&quot;som1&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="449683870373412" type="BtIr">
+                    <param id="0" name="X">405</param>
+                    <param id="1" name="Y">759</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="864044477967400">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="216684401067386" type="System">
+                    <param id="0" name="Variable">Pagina</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="707250995120636" type="Credito">
+                    <param id="0" name="Animation">&quot;som2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="983122052420914" type="BtIr">
+                    <param id="0" name="X">700</param>
+                    <param id="1" name="Y">700</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
