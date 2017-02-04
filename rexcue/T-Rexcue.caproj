@@ -1129,7 +1129,7 @@
         <object-type global="1" name="arResp" sid="874349203858193">
             <plugin id="Arr" />
         </object-type>
-        <object-type name="TxScore" sid="562363013132622">
+        <object-type name="Fire" sid="562363013132622">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Pin" sid="669528347247880">
@@ -1643,7 +1643,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite3" sid="714571049300771">
+        <object-type name="TxScore" sid="714571049300771">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Anchor" sid="633873279272268">
@@ -1675,20 +1675,20 @@
                 </behavior-type>
             </behaviors>
         </object-type>
-        <object-type name="Sprite" sid="301531232527841">
+        <object-type name="PlayGame" sid="301531232527841">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="396157881126508" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.503759" original-source="C:\Users\link_\Downloads\RexPLAY.png">
+                    <frame duration="1" hotspotX="0.504065" hotspotY="0.5" original-source="C:\Users\link_\Downloads\Imagens\PLAYrex.png">
                         <collision-poly>
-                            <point x="0.201493" y="0.203008" />
-                            <point x="0.5" y="0.075188" />
-                            <point x="0.798507" y="0.203008" />
-                            <point x="0.925373" y="0.496241" />
-                            <point x="0.798507" y="0.796992" />
-                            <point x="0.5" y="0.924812" />
-                            <point x="0.201493" y="0.796992" />
-                            <point x="0.0746269" y="0.496241" />
+                            <point x="0.0556977" y="0.173814" />
+                            <point x="0.463415" y="0.0250235" />
+                            <point x="0.871131" y="0.173814" />
+                            <point x="1" y="0.515156" />
+                            <point x="0.871131" y="0.865249" />
+                            <point x="0.463415" y="1" />
+                            <point x="0.0556977" y="0.865249" />
+                            <point x="0" y="0.515156" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1732,6 +1732,61 @@
                             <point x="0.00862098" y="0.5" />
                             <point x="0.163793" y="0.155172" />
                             <point x="0.508621" y="0.00862068" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BarraInstrucao" sid="124241653859390">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="281685984823200" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502164" original-source="C:\Users\link_\Downloads\REX-simbolos.png">
+                        <collision-poly>
+                            <point x="0.0285171" y="0.0649351" />
+                            <point x="0.5" y="0.04329" />
+                            <point x="0.971483" y="0.0649351" />
+                            <point x="0.975285" y="0.943723" />
+                            <point x="0.5" y="0.969697" />
+                            <point x="0.0247148" y="0.943723" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Home" sid="304315733490817">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="507256967116000" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504348" original-source="C:\Users\link_\Downloads\RexHome.png">
+                        <collision-poly>
+                            <point x="0.155172" y="0.156522" />
+                            <point x="0.5" y="0.00869564" />
+                            <point x="0.844828" y="0.156522" />
+                            <point x="0.991379" y="0.495652" />
+                            <point x="0.844828" y="0.843478" />
+                            <point x="0.5" y="0.991304" />
+                            <point x="0.155172" y="0.843478" />
+                            <point x="0.00862069" y="0.495652" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="767844174599383">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="631114085989836" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\link_\Downloads\REXreiniciar.png">
+                        <collision-poly>
+                            <point x="0.181034" y="0.137931" />
+                            <point x="0.5" y="0.00862069" />
+                            <point x="0.818965" y="0.137931" />
+                            <point x="0.982759" y="0.448276" />
+                            <point x="0.87069" y="0.818965" />
+                            <point x="0.5" y="0.991379" />
+                            <point x="0.12931" y="0.818965" />
+                            <point x="0.0172414" y="0.448276" />
                         </collision-poly>
                     </frame>
                 </animation>

@@ -272,6 +272,14 @@
                         <action id="-15" name="Set visible" sid="539200166797215" type="spDerrota">
                             <param id="0" name="Visibility">1</param>
                         </action>
+                        <action id="-3" name="Set position" sid="869967027806709" type="Sprite">
+                            <param id="0" name="X">130</param>
+                            <param id="1" name="Y">425</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="812939186238892" type="Home">
+                            <param id="0" name="X">340</param>
+                            <param id="1" name="Y">425</param>
+                        </action>
                         <action id="-15" name="Set visible" sid="457927517300074" type="spSuba">
                             <param id="0" name="Visibility">0</param>
                         </action>
@@ -281,10 +289,10 @@
                         <action behavior="Bullet2" id="1" name="Set acceleration" sid="430590656723181" type="tbNuvens">
                             <param id="0" name="Acceleration">ACE_BG_2</param>
                         </action>
-                        <action id="-26" name="Move to layer" sid="392782806221553" type="TxScore">
+                        <action id="-26" name="Move to layer" sid="392782806221553" type="Fire">
                             <param id="0" name="Layer">3</param>
                         </action>
-                        <action id="-24" name="Move to top" sid="715542596908930" type="TxScore" />
+                        <action id="-24" name="Move to top" sid="715542596908930" type="Fire" />
                         <action id="-26" name="Move to layer" sid="613170118988524" type="spChao">
                             <param id="0" name="Layer">3</param>
                         </action>
@@ -336,7 +344,7 @@
                         <action behavior="Bullet2" id="1" name="Set acceleration" sid="563496060116960" type="tbNuvens">
                             <param id="0" name="Acceleration">ACE_BG_1</param>
                         </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="296081233734554" type="TxScore">
+                        <action behavior="Pin" id="0" name="Pin to object" sid="296081233734554" type="Fire">
                             <param id="0" name="Pin to">tbGuia</param>
                             <param id="1" name="Mode">0</param>
                         </action>
@@ -517,6 +525,9 @@
                         <action id="-15" name="Set visible" sid="487540079024539" type="txObjetivo">
                             <param id="0" name="Visibility">1</param>
                         </action>
+                        <action id="-15" name="Set visible" sid="586037477621498" type="BarraInstrucao">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <comment>&gt; Codigo da Fase</comment>
@@ -664,6 +675,9 @@
                                             <param id="1" name="Value">9</param>
                                         </action>
                                         <action id="-15" name="Set visible" sid="599001776162087" type="txObjetivo">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="338828900348956" type="BarraInstrucao">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
                                     </actions>
@@ -1511,7 +1525,7 @@
         <event-block sid="344637425223496">
             <conditions>
                 <condition id="1" name="Is overlapping another object" sid="298132362819989" type="spJogador">
-                    <param id="0" name="Object">TxScore</param>
+                    <param id="0" name="Object">Fire</param>
                 </condition>
             </conditions>
             <actions>
@@ -1579,9 +1593,13 @@
                     <param id="0" name="X">240</param>
                     <param id="1" name="Y">475</param>
                 </action>
-                <action id="-3" name="Set position" sid="668368952156522" type="Play">
+                <action id="-3" name="Set position" sid="668368952156522" type="PlayGame">
                     <param id="0" name="X">240</param>
                     <param id="1" name="Y">325</param>
+                </action>
+                <action id="-3" name="Set position" sid="126174978978650" type="Home">
+                    <param id="0" name="X">74</param>
+                    <param id="1" name="Y">56</param>
                 </action>
                 <action id="-16" name="Wait" sid="915933026835971" type="System">
                     <param id="0" name="Seconds">1</param>
@@ -1591,7 +1609,7 @@
         <event-block sid="754102931661770">
             <conditions>
                 <condition id="3" name="On touched object" sid="129423690663284" type="Touch">
-                    <param id="0" name="Object">Play</param>
+                    <param id="0" name="Object">PlayGame</param>
                 </condition>
             </conditions>
             <actions>
@@ -1604,11 +1622,15 @@
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
-                <action id="-3" name="Set position" sid="339206958903686" type="Play">
+                <action id="-3" name="Set position" sid="339206958903686" type="PlayGame">
                     <param id="0" name="X">900</param>
                     <param id="1" name="Y">900</param>
                 </action>
                 <action id="-3" name="Set position" sid="576810191898495" type="Som">
+                    <param id="0" name="X">900</param>
+                    <param id="1" name="Y">900</param>
+                </action>
+                <action id="-3" name="Set position" sid="707137956688763" type="Home">
                     <param id="0" name="X">900</param>
                     <param id="1" name="Y">900</param>
                 </action>
@@ -1713,6 +1735,51 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="259633081278222">
+            <conditions>
+                <condition id="3" name="On touched object" sid="961758872327237" type="Touch">
+                    <param id="0" name="Object">Home</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="414991658931917" type="Audio">
+                    <param id="0" name="Audio file">button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="829165460279330" type="System" />
+                <action id="-2" name="Go to layout" sid="417513187201942" type="System">
+                    <param id="0" name="Layout">MAIN_MENU</param>
+                </action>
+                <action id="-10" name="Set value" sid="905820250086285" type="arControl">
+                    <param id="0" name="Instance variable">SCORE</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="796909946764540" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="497335989558161">
+            <conditions>
+                <condition id="3" name="On touched object" sid="480668574033751" type="Touch">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="713144872178271" type="Audio">
+                    <param id="0" name="Audio file">button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="937884390451922" type="System" />
+                <action id="-16" name="Wait" sid="792354265487909" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

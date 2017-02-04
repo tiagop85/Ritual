@@ -523,7 +523,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TxScore" uid="16">
+                <instance type="Fire" uid="16">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -694,6 +694,28 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.501976311</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BarraInstrucao" uid="56">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>242.5</x>
+                        <y>153.238098145</y>
+                        <z>0</z>
+                        <width>428</width>
+                        <height>224</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502164483</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1120,33 +1142,6 @@
                         <opacity>0.800000012</opacity>
                     </world>
                 </instance>
-                <instance type="txObjetivo" uid="54">
-                    <properties>
-                        <text>COLETE NA SEQUENCIA</text>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <font>Arial,-32,400,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Center</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>229</x>
-                        <y>208</y>
-                        <z>0</z>
-                        <width>210</width>
-                        <height>93</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
             </instances>
             <effects />
         </layer>
@@ -1187,11 +1182,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>419</x>
-                        <y>39</y>
+                        <x>426</x>
+                        <y>24</y>
                         <z>0</z>
-                        <width>70</width>
-                        <height>70</height>
+                        <width>45</width>
+                        <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1220,7 +1215,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>141.5</x>
+                        <x>145.5</x>
                         <y>27</y>
                         <z>0</z>
                         <width>221</width>
@@ -1232,7 +1227,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="49">
+                <instance type="TxScore" uid="49">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1253,7 +1248,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>89</x>
+                        <x>93</x>
                         <y>27</y>
                         <z>0</z>
                         <width>100</width>
@@ -1291,7 +1286,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>183</x>
+                        <x>187</x>
                         <y>28</y>
                         <z>0</z>
                         <width>93</width>
@@ -1325,7 +1320,34 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Play" uid="51">
+                <instance type="txObjetivo" uid="54">
+                    <properties>
+                        <text>COLETE NA SEQUENCIA</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Cooper Black,-32,400,0</font>
+                        <color>225,142,1</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>246</x>
+                        <y>191</y>
+                        <z>0</z>
+                        <width>210</width>
+                        <height>93</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Home" uid="55">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1335,8 +1357,30 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>911</x>
-                        <y>134</y>
+                        <x>-442</x>
+                        <y>-59</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>99</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.504347801</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="PlayGame" uid="57">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>809</x>
+                        <y>688</y>
                         <z>0</z>
                         <width>100</width>
                         <height>105</height>
@@ -1347,32 +1391,21 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BtPause2" uid="55">
+                <instance type="Sprite" uid="51">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Anchor">
-                            <properties>
-                                <left-edge>Window left</left-edge>
-                                <top-edge>Window top</top-edge>
-                                <right-edge>None</right-edge>
-                                <bottom-edge>None</bottom-edge>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-391</x>
-                        <y>-106</y>
+                        <x>692</x>
+                        <y>-25</y>
                         <z>0</z>
-                        <width>116</width>
-                        <height>116</height>
+                        <width>100</width>
+                        <height>100</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
