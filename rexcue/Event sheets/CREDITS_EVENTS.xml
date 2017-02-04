@@ -6,10 +6,8 @@
         <variable constant="0" name="Pagina" sid="832121703841459" static="0" type="number">0</variable>
         <event-block sid="724247500632178">
             <conditions>
-                <condition id="6" name="On object clicked" sid="225662190072152" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">BtVoltar</param>
+                <condition id="3" name="On touched object" sid="225662190072152" type="Touch">
+                    <param id="0" name="Object">BtVoltar</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="752429347485056" type="System">
                     <param id="0" name="Variable">Pagina</param>
@@ -34,10 +32,8 @@
         </event-block>
         <event-block sid="876538618219953">
             <conditions>
-                <condition id="6" name="On object clicked" sid="503054891420682" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">BtVoltar</param>
+                <condition id="3" name="On touched object" sid="503054891420682" type="Touch">
+                    <param id="0" name="Object">BtVoltar</param>
                 </condition>
             </conditions>
             <actions>
@@ -55,10 +51,8 @@
         </event-block>
         <event-block sid="730864318796299">
             <conditions>
-                <condition id="6" name="On object clicked" sid="508498231997370" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">BtIr</param>
+                <condition id="3" name="On touched object" sid="508498231997370" type="Touch">
+                    <param id="0" name="Object">BtIr</param>
                 </condition>
             </conditions>
             <actions>

@@ -15,6 +15,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="4">SPLASH_SCREEN</layout>
         <event-sheet active="1" order="1">GAME_EVENTS</event-sheet>
         <event-sheet order="3">MENU_EVENTS</event-sheet>
+        <event-sheet order="5">CREDITS_EVENTS</event-sheet>
+        <event-sheet order="6">MUSIC_EVENTS</event-sheet>
+        <event-sheet order="7">NAVIGATION</event-sheet>
+        <event-sheet order="8">SPLASH_EVENTS</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
