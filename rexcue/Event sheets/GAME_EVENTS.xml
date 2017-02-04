@@ -514,6 +514,9 @@
                         <action id="-15" name="Set visible" sid="853424976893003" type="spSuba">
                             <param id="0" name="Visibility">0</param>
                         </action>
+                        <action id="-15" name="Set visible" sid="487540079024539" type="txObjetivo">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <comment>&gt; Codigo da Fase</comment>
@@ -659,6 +662,9 @@
                                         <action id="-10" name="Set value" sid="130517526910203" type="spObjetoCodigo">
                                             <param id="0" name="Instance variable">SKIN_MOEDA</param>
                                             <param id="1" name="Value">9</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="599001776162087" type="txObjetivo">
+                                            <param id="0" name="Visibility">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1285,7 +1291,7 @@
                 <event-block sid="303964236489190">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="611064829331013" type="System">
-                            <param id="0" name="Interval (seconds)">0.1</param>
+                            <param id="0" name="Interval (seconds)">2.5</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="332733441334533" type="System">
                             <param id="0" name="Variable">GAME_STATUS</param>

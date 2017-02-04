@@ -1710,6 +1710,33 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="txObjetivo" sid="317702813767061">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="BtPause2" sid="754244367005792">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="440535466614899">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="262663015608712" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\link_\Downloads\rexPausar.png">
+                        <collision-poly>
+                            <point x="0.844828" y="0.155172" />
+                            <point x="0.991379" y="0.5" />
+                            <point x="0.844828" y="0.844828" />
+                            <point x="0.508621" y="0.991379" />
+                            <point x="0.163793" y="0.844828" />
+                            <point x="0.00862098" y="0.5" />
+                            <point x="0.163793" y="0.155172" />
+                            <point x="0.508621" y="0.00862068" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="fmTambor" plugin-id="Sprite" sid="284777844382716">
