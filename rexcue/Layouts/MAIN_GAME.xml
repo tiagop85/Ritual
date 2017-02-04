@@ -40,7 +40,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>238</x>
-                        <y>731.5</y>
+                        <y>741.5</y>
                         <z>0</z>
                         <width>716</width>
                         <height>5</height>
@@ -137,7 +137,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>238</x>
-                        <y>465.5</y>
+                        <y>495.5</y>
                         <z>0</z>
                         <width>716</width>
                         <height>350</height>
@@ -291,243 +291,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>226</x>
-                        <y>729</y>
+                        <x>236</x>
+                        <y>742</y>
                         <z>0</z>
-                        <width>554.04498291</width>
+                        <width>530.319763184</width>
                         <height>946.493530273</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>1</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="spNuvens" uid="7">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>245</x>
-                        <y>-177</y>
-                        <z>0</z>
-                        <width>582</width>
-                        <height>426</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="spNuvens" uid="43">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-97</x>
-                        <y>110</y>
-                        <z>0</z>
-                        <width>582</width>
-                        <height>426</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="spNuvens" uid="44">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>553</x>
-                        <y>198</y>
-                        <z>0</z>
-                        <width>582</width>
-                        <height>426</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="spPlataforma" uid="45">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-247.254577637</x>
-                        <y>-51</y>
-                        <z>0</z>
-                        <width>409</width>
-                        <height>112</height>
-                        <depth>0</depth>
-                        <hotspotX>-0.687664032</hotspotX>
-                        <hotspotY>0.75</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="spJogadorF1" uid="49">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <DIRECTION>DIREITA</DIRECTION>
-                        <NUMERO>3</NUMERO>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Pin" />
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>2</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>0</fade-out-time>
-                                <destroy>No</destroy>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>129</x>
-                        <y>-181</y>
-                        <z>0</z>
-                        <width>78.676002502</width>
-                        <height>113.916999817</height>
-                        <depth>0</depth>
-                        <hotspotX>0.503816783</hotspotX>
-                        <hotspotY>0.502564132</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="spJogadorF2" uid="46">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <DIRECTION>DIREITA</DIRECTION>
-                        <NUMERO>4</NUMERO>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Pin" />
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>2</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>0</fade-out-time>
-                                <destroy>No</destroy>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>237</x>
-                        <y>-181</y>
-                        <z>0</z>
-                        <width>78.676002502</width>
-                        <height>113.916999817</height>
-                        <depth>0</depth>
-                        <hotspotX>0.503816783</hotspotX>
-                        <hotspotY>0.502564132</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="spJogadorF3" uid="47">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <DIRECTION>DIREITA</DIRECTION>
-                        <NUMERO>5</NUMERO>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Pin" />
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>2</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>0</fade-out-time>
-                                <destroy>No</destroy>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>341</x>
-                        <y>-181</y>
-                        <z>0</z>
-                        <width>78.676002502</width>
-                        <height>113.916999817</height>
-                        <depth>0</depth>
-                        <hotspotX>0.503817022</hotspotX>
-                        <hotspotY>0.502564013</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -718,39 +489,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spSuba" uid="40">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>1</fade-in-time>
-                                <wait-time>2</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>No</destroy>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>435</x>
-                        <y>544</y>
-                        <z>0</z>
-                        <width>60.755039215</width>
-                        <height>36.803531647</height>
-                        <depth>0</depth>
-                        <hotspotX>0.514423072</hotspotX>
-                        <hotspotY>0.476190478</hotspotY>
-                        <angle>1.570796371</angle>
-                        <opacity>0.75</opacity>
-                    </world>
-                </instance>
                 <instance type="spTamborDir" uid="10">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -768,14 +506,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>434.001922607</x>
+                        <x>440.001922607</x>
                         <y>593.698486328</y>
                         <z>0</z>
                         <width>42</width>
                         <height>41</height>
                         <depth>0</depth>
-                        <hotspotX>0.510204077</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.607843161</hotspotX>
+                        <hotspotY>0.491525412</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -798,16 +536,16 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>45.741638184</x>
+                        <x>41.741638184</x>
                         <y>593.697753906</y>
                         <z>0</z>
                         <width>42</width>
                         <height>41</height>
                         <depth>0</depth>
-                        <hotspotX>0.510204077</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
+                        <hotspotX>0.509803951</hotspotX>
+                        <hotspotY>0.508474588</hotspotY>
+                        <angle>3.141592741</angle>
+                        <opacity>0.75</opacity>
                     </world>
                 </instance>
             </instances>
@@ -829,6 +567,28 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+                <instance type="spDerrota" uid="31">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>240</x>
+                        <y>292</y>
+                        <z>0</z>
+                        <width>297.897094727</width>
+                        <height>160.357376099</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.501976311</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="spObjetoCodigo" uid="33">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -1035,10 +795,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>240</x>
-                        <y>292</y>
+                        <y>719</y>
                         <z>0</z>
-                        <width>297.897003174</width>
-                        <height>160.356994629</height>
+                        <width>237.189651489</width>
+                        <height>127.678421021</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1046,39 +806,89 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spDerrota" uid="31">
+                <instance type="spOVNI" uid="5">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>7</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>3</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>335</x>
+                        <y>387</y>
+                        <z>0</z>
+                        <width>119.771751404</width>
+                        <height>225.579071045</height>
+                        <depth>0</depth>
+                        <hotspotX>0.502242148</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="spNuvens" uid="44">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>600</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>3</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>0</x>
+                        <y>416</y>
+                        <z>0</z>
+                        <width>1582</width>
+                        <height>798</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.523474157</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="spSuba" uid="40">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>240</x>
-                        <y>292</y>
-                        <z>0</z>
-                        <width>297.897094727</width>
-                        <height>160.357376099</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.501976311</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="txTAP" uid="39">
-                    <properties>
-                        <text>TAP</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16,700,0</font>
-                        <color>255,255,255</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Fade">
@@ -1094,16 +904,16 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>418</x>
-                        <y>588</y>
+                        <x>439.262573242</x>
+                        <y>586.676330566</y>
                         <z>0</z>
-                        <width>52</width>
-                        <height>50</height>
+                        <width>32.714252472</width>
+                        <height>90.256278992</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.501618147</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.649999976</opacity>
                     </world>
                 </instance>
             </instances>
@@ -1143,6 +953,7 @@
                 <FAIXA_TOCANDO>0</FAIXA_TOCANDO>
                 <MUSICA_BONUS>0</MUSICA_BONUS>
                 <FASE_ATUAL>3</FASE_ATUAL>
+                <GOD_MODE>0</GOD_MODE>
             </instance-variables>
         </instance>
     </nonworld-instances>
