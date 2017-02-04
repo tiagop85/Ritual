@@ -607,35 +607,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spTamborDir" uid="10">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>440.001922607</x>
-                        <y>593.698486328</y>
-                        <z>0</z>
-                        <width>42</width>
-                        <height>41</height>
-                        <depth>0</depth>
-                        <hotspotX>0.607843161</hotspotX>
-                        <hotspotY>0.491525412</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="spTamborEsq" uid="2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -979,39 +950,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spSuba" uid="40">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>1</fade-in-time>
-                                <wait-time>2</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>No</destroy>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>439.262573242</x>
-                        <y>586.676330566</y>
-                        <z>0</z>
-                        <width>32.714252472</width>
-                        <height>90.256278992</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.501618147</hotspotY>
-                        <angle>0</angle>
-                        <opacity>0.850000024</opacity>
-                    </world>
-                </instance>
                 <instance type="ptFolhas1" uid="3">
                     <properties>
                         <rate>14</rate>
@@ -1149,6 +1087,35 @@
                         <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>0.800000012</opacity>
+                    </world>
+                </instance>
+                <instance type="spTamborDir" uid="10">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>440.001922607</x>
+                        <y>593.698486328</y>
+                        <z>0</z>
+                        <width>42</width>
+                        <height>41</height>
+                        <depth>0</depth>
+                        <hotspotX>0.607843161</hotspotX>
+                        <hotspotY>0.491525412</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>
@@ -1420,6 +1387,39 @@
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="spSuba" uid="40">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>2</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>439.262573242</x>
+                        <y>586.676330566</y>
+                        <z>0</z>
+                        <width>32.714252472</width>
+                        <height>90.256278992</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.501618147</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.850000024</opacity>
                     </world>
                 </instance>
             </instances>
