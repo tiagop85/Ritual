@@ -14,6 +14,7 @@
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
@@ -23,6 +24,7 @@
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -1384,33 +1386,6 @@
         <object-type name="Button" sid="826333764051680">
             <plugin id="Button" />
         </object-type>
-        <object-type name="spNuvens" sid="981499380772814">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Pin" sid="188145972342469">
-                    <behavior id="Pin" />
-                </behavior-type>
-                <behavior-type name="Bullet" sid="393123569369329">
-                    <behavior id="Bullet" />
-                </behavior-type>
-                <behavior-type name="Fade" sid="691913848744843">
-                    <behavior id="Fade" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="299751260650930" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0.523474" original-source="C:\Users\tiago.parente\Downloads\drive-download-20170201T133247Z\nuvensrexcue.png">
-                        <image-point name="Imagepoint 1" x="1" y="0.5" />
-                        <collision-poly>
-                            <point x="0.5" y="0.176056" />
-                            <point x="0.489254" y="0.276995" />
-                            <point x="0.5" y="0.269953" />
-                            <point x="0.513907" y="0.265258" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="TiledBackground" sid="862888241212250">
             <plugin id="TiledBg" />
             <texture />
@@ -1444,6 +1419,48 @@
                     <frame duration="1" hotspotX="0.502242" hotspotY="1" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="ptFolhas1" sid="889385199727721">
+            <plugin id="Particles" />
+            <behaviors>
+                <behavior-type name="Pin" sid="975432087965553">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Tiago\Downloads\folhas.png" />
+        </object-type>
+        <object-type name="ptFolhas2" sid="155800755849637">
+            <plugin id="Particles" />
+            <behaviors>
+                <behavior-type name="Pin" sid="392300124973797">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Tiago\Downloads\folhas.png" />
+        </object-type>
+        <object-type name="ptFolhas3" sid="957503293608096">
+            <plugin id="Particles" />
+            <behaviors>
+                <behavior-type name="Pin" sid="695612350137390">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Tiago\Downloads\folhas.png" />
+        </object-type>
+        <object-type name="tbNuvens" sid="224248915187209">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="185439180669171">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="115370948068290">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Bullet2" sid="179176236092404">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Tiago\Downloads\nuvensrexcue.png" />
         </object-type>
         <object-type name="TiledBackground2" sid="121876185334603">
             <plugin id="TiledBg" />
