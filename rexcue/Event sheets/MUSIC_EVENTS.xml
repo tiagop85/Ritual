@@ -131,9 +131,6 @@
                 <action id="4" name="Preload" sid="146079100887839" type="Audio">
                     <param id="0" name="Audio file">vitoriaDinossauro</param>
                 </action>
-                <action id="4" name="Preload" sid="993277937687853" type="Audio">
-                    <param id="0" name="Audio file">263889_jarredgibb_rattle-drum</param>
-                </action>
                 <action id="4" name="Preload" sid="205418694322312" type="Audio">
                     <param id="0" name="Audio file">vento</param>
                 </action>

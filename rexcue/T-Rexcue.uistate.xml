@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="1">MAIN_GAME</layout>
-        <event-sheet order="0">GAME_EVENTS</event-sheet>
+        <layout active="1" order="0">MAIN_GAME</layout>
+        <event-sheet order="1">GAME_EVENTS</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -23,19 +23,19 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="0" name="fmTambor" />
     </families-expanded>
     <folders-expanded>
-        <folder expanded="0" path="object-folder/" />
+        <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
-        <folder expanded="0" path="music-folder/" />
+        <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/spAndaime/" />
         <folder expanded="1" path="animation-folder/spTamborEsq/" />
         <folder expanded="1" path="animation-folder/spJogador/" />
         <folder expanded="1" path="animation-folder/spTamborDir/" />
         <folder expanded="1" path="animation-folder/spObjetoCodigo/" />
-        <folder expanded="1" path="animation-folder/spFogo/" />
+        <folder expanded="1" path="animation-folder/TxScore/" />
         <folder expanded="1" path="animation-folder/spBordaInferior/" />
         <folder expanded="1" path="animation-folder/spLimiteInferior/" />
         <folder expanded="1" path="animation-folder/spChao/" />
@@ -57,5 +57,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Credito/" />
         <folder expanded="1" path="animation-folder/BtVoltar/" />
         <folder expanded="1" path="animation-folder/BtIr/" />
+        <folder expanded="1" path="animation-folder/BarraScore/" />
+        <folder expanded="1" path="animation-folder/BtPause/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/spFundo3/" />
     </folders-expanded>
 </c2uistate>

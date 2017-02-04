@@ -42,6 +42,24 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="505887356776090" type="Audio">
+                            <param id="0" name="Audio file">derrotaDinossauro</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="233581818287183" type="Audio">
+                            <param id="0" name="Audio file">derrota</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="911175467458884" type="Audio">
+                            <param id="0" name="Audio file">lavaDinossauro</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action id="-9" name="Set value" sid="303911988142140" type="System">
                             <param id="0" name="Variable">RESP_ATUAL</param>
                             <param id="1" name="Value">CODIGO_MAX_ATUAL+1</param>
@@ -49,6 +67,10 @@
                         <action id="-9" name="Set value" sid="617793451247122" type="System">
                             <param id="0" name="Variable">GAME_STATUS</param>
                             <param id="1" name="Value">CTSTATUS_GAME_OVER</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="223574395399206" type="arControl">
+                            <param id="0" name="Instance variable">SCORE</param>
+                            <param id="1" name="Value">50</param>
                         </action>
                     </actions>
                 </event-block>
@@ -139,6 +161,24 @@
                         <event-block sid="501282582272583">
                             <conditions />
                             <actions>
+                                <action id="0" name="Play" sid="225848291021733" type="Audio">
+                                    <param id="0" name="Audio file">chegadaNave</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">10</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="469053813429555" type="Audio">
+                                    <param id="0" name="Audio file">vitoria</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">10</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="536251230007371" type="Audio">
+                                    <param id="0" name="Audio file">vitoriaDinossauro</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">10</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                                 <action id="-1" name="Set X" sid="365813615491205" type="spOVNI">
                                     <param id="0" name="X">spJogador.X</param>
                                 </action>
@@ -179,6 +219,10 @@
                                 <action id="-10" name="Set value" sid="845103669901874" type="arControl">
                                     <param id="0" name="Instance variable">FASE_ATUAL</param>
                                     <param id="1" name="Value">3</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="294322681328840" type="arControl">
+                                    <param id="0" name="Instance variable">SCORE</param>
+                                    <param id="1" name="Value">0</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="409702324177565" type="System">
                                     <param id="0" name="Seconds">6.5</param>
@@ -237,10 +281,10 @@
                         <action behavior="Bullet2" id="1" name="Set acceleration" sid="430590656723181" type="tbNuvens">
                             <param id="0" name="Acceleration">ACE_BG_2</param>
                         </action>
-                        <action id="-26" name="Move to layer" sid="392782806221553" type="spFogo">
+                        <action id="-26" name="Move to layer" sid="392782806221553" type="TxScore">
                             <param id="0" name="Layer">3</param>
                         </action>
-                        <action id="-24" name="Move to top" sid="715542596908930" type="spFogo" />
+                        <action id="-24" name="Move to top" sid="715542596908930" type="TxScore" />
                         <action id="-26" name="Move to layer" sid="613170118988524" type="spChao">
                             <param id="0" name="Layer">3</param>
                         </action>
@@ -292,7 +336,7 @@
                         <action behavior="Bullet2" id="1" name="Set acceleration" sid="563496060116960" type="tbNuvens">
                             <param id="0" name="Acceleration">ACE_BG_1</param>
                         </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="296081233734554" type="spFogo">
+                        <action behavior="Pin" id="0" name="Pin to object" sid="296081233734554" type="TxScore">
                             <param id="0" name="Pin to">tbGuia</param>
                             <param id="1" name="Mode">0</param>
                         </action>
@@ -321,6 +365,10 @@
                             <param id="1" name="Mode">0</param>
                         </action>
                         <action behavior="Pin" id="0" name="Pin to object" sid="327912455688025" type="spFundo2">
+                            <param id="0" name="Pin to">tbGuia</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="757978829148348" type="spFundo3">
                             <param id="0" name="Pin to">tbGuia</param>
                             <param id="1" name="Mode">0</param>
                         </action>
@@ -748,6 +796,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="267372628662411" type="Audio">
+                                            <param id="0" name="Audio file">tambor</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">10</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                         <action behavior="Bullet" id="0" name="Set speed" sid="252554918490689" type="tbGuia">
                                             <param id="0" name="Speed">VEL_BG_2</param>
                                         </action>
@@ -1053,10 +1107,20 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="535075766351665" type="Audio">
+                                    <param id="0" name="Audio file">itemCerto</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">10</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                                 <action id="-9" name="Destroy" sid="780017851761099" type="spObjetoCodigo" />
                                 <action id="-10" name="Add to" sid="739777293443442" type="System">
                                     <param id="0" name="Variable">RESP_ATUAL</param>
                                     <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-11" name="Add to" sid="125497215078304" type="arControl">
+                                    <param id="0" name="Instance variable">SCORE</param>
+                                    <param id="1" name="Value">50</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -1074,6 +1138,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="433521451084584" type="Audio">
+                                            <param id="0" name="Audio file">itemCerto</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">10</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                         <action id="-9" name="Set value" sid="393757000420087" type="System">
                                             <param id="0" name="Variable">GAME_STATUS</param>
                                             <param id="1" name="Value">CTSTATUS_GAME_OVER</param>
@@ -1081,6 +1151,10 @@
                                         <action id="-10" name="Add to" sid="386839519283126" type="System">
                                             <param id="0" name="Variable">RESP_ATUAL</param>
                                             <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-11" name="Add to" sid="478686276799775" type="arControl">
+                                            <param id="0" name="Instance variable">SCORE</param>
+                                            <param id="1" name="Value">50</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1092,13 +1166,41 @@
                                 <condition id="-22" name="Else" sid="401361858280607" type="System" />
                             </conditions>
                             <actions>
-                                <action id="-9" name="Set value" sid="289289669766467" type="System">
-                                    <param id="0" name="Variable">GAME_STATUS</param>
-                                    <param id="1" name="Value">CTSTATUS_GAME_OVER</param>
+                                <action id="0" name="Play" sid="883100811520562" type="Audio">
+                                    <param id="0" name="Audio file">itemErrado</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                                 <action id="-10" name="Add to" sid="454386708958798" type="System">
                                     <param id="0" name="Variable">RESP_ATUAL</param>
                                     <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Play" sid="974634781632608" type="Audio">
+                                    <param id="0" name="Audio file">lava</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="691274904915437" type="Audio">
+                                    <param id="0" name="Audio file">derrotaDinossauro</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">10</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="313200727060214" type="Audio">
+                                    <param id="0" name="Audio file">derrota</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">10</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="289289669766467" type="System">
+                                    <param id="0" name="Variable">GAME_STATUS</param>
+                                    <param id="1" name="Value">CTSTATUS_GAME_OVER</param>
+                                </action>
+                                <action id="-12" name="Subtract from" sid="650295528667296" type="arControl">
+                                    <param id="0" name="Instance variable">SCORE</param>
+                                    <param id="1" name="Value">50</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1183,7 +1285,7 @@
                 <event-block sid="303964236489190">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="611064829331013" type="System">
-                            <param id="0" name="Interval (seconds)">2.5</param>
+                            <param id="0" name="Interval (seconds)">0.1</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="332733441334533" type="System">
                             <param id="0" name="Variable">GAME_STATUS</param>
@@ -1209,7 +1311,7 @@
                         </action>
                         <action id="-10" name="Set value" sid="216272149096961" type="spObjetoCodigo">
                             <param id="0" name="Instance variable">SKIN_MOEDA</param>
-                            <param id="1" name="Value">1+floor(random(CT_MAX_OBJETOS-1))</param>
+                            <param id="1" name="Value">1+floor(random(CT_MAX_OBJETOS))</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1403,7 +1505,7 @@
         <event-block sid="344637425223496">
             <conditions>
                 <condition id="1" name="Is overlapping another object" sid="298132362819989" type="spJogador">
-                    <param id="0" name="Object">spFogo</param>
+                    <param id="0" name="Object">TxScore</param>
                 </condition>
             </conditions>
             <actions>
@@ -1425,6 +1527,186 @@
                     <param id="0" name="X">0</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="490485325051820">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="847448585080280" type="System">
+                    <param id="0" name="Interval (seconds)">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="288377772728051" type="Audio">
+                    <param id="0" name="Audio file">vento</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="423158751353312">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="416322658334689" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="499940888026166" type="Score">
+                    <param id="0" name="Text">arControl.SCORE</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="172967611690732">
+            <conditions>
+                <condition id="3" name="On touched object" sid="200848073664498" type="Touch">
+                    <param id="0" name="Object">BtPause</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="710183445680324" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+                <action id="0" name="Play" sid="355547656736966" type="Audio">
+                    <param id="0" name="Audio file">button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-3" name="Set position" sid="732881542625913" type="Som">
+                    <param id="0" name="X">240</param>
+                    <param id="1" name="Y">475</param>
+                </action>
+                <action id="-3" name="Set position" sid="668368952156522" type="Play">
+                    <param id="0" name="X">240</param>
+                    <param id="1" name="Y">325</param>
+                </action>
+                <action id="-16" name="Wait" sid="915933026835971" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="754102931661770">
+            <conditions>
+                <condition id="3" name="On touched object" sid="129423690663284" type="Touch">
+                    <param id="0" name="Object">Play</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="736298920761630" type="System">
+                    <param id="0" name="Time scale">1</param>
+                </action>
+                <action id="0" name="Play" sid="802521472209225" type="Audio">
+                    <param id="0" name="Audio file">button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-3" name="Set position" sid="339206958903686" type="Play">
+                    <param id="0" name="X">900</param>
+                    <param id="1" name="Y">900</param>
+                </action>
+                <action id="-3" name="Set position" sid="576810191898495" type="Som">
+                    <param id="0" name="X">900</param>
+                    <param id="1" name="Y">900</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="680794096997611">
+            <conditions>
+                <condition id="3" name="On touched object" sid="822172574626131" type="Touch">
+                    <param id="0" name="Object">Som</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="389496573414150">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="542319676866451" type="arControl">
+                            <param id="0" name="Instance variable">SOUND</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="482937394382384" type="arControl">
+                            <param id="0" name="Instance variable">SOUND</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="8" name="Set silent" sid="447812934302215" type="Audio">
+                            <param id="0" name="Mode">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="308317606068487" type="Som">
+                            <param id="0" name="Animation">&quot;sem&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="524059060480434" type="System">
+                            <param id="0" name="Seconds">0.100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="394181904726285">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="404536852424584" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="771071563125195" type="arControl">
+                            <param id="0" name="Instance variable">SOUND</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="8" name="Set silent" sid="852351968196315" type="Audio">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="248930383485952" type="Audio" />
+                        <action id="0" name="Play" sid="579824449163980" type="Audio">
+                            <param id="0" name="Audio file">button</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="606178565573775" type="Som">
+                            <param id="0" name="Animation">&quot;som&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="349503464154046" type="Audio">
+                            <param id="0" name="Audio file">Jogo - Kevin MacLeod - Allada</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="363508160194233">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="979848292303087" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="310481496896740">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="678957614396436" type="arControl">
+                            <param id="0" name="Instance variable">SOUND</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="368314917064577" type="Som">
+                            <param id="0" name="Animation">&quot;som&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="147327907446255">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="966649881177665" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="193681436639328" type="Som">
+                            <param id="0" name="Animation">&quot;sem&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

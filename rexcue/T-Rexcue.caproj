@@ -21,6 +21,7 @@
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
@@ -1128,7 +1129,7 @@
         <object-type global="1" name="arResp" sid="874349203858193">
             <plugin id="Arr" />
         </object-type>
-        <object-type name="spFogo" sid="562363013132622">
+        <object-type name="TxScore" sid="562363013132622">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Pin" sid="669528347247880">
@@ -1242,18 +1243,6 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
-        </object-type>
-        <object-type name="TxPlay" sid="468679187704753">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="TxSettings" sid="778542995411083">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="TxCredits" sid="648582597258359">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="TxTituloCreditos" sid="129860818309844">
-            <plugin id="Text" />
         </object-type>
         <object-type name="spDerrota" sid="648818092847134">
             <plugin id="Sprite" />
@@ -1378,6 +1367,8 @@
                 <instance-variable name="MUSICA_BONUS" sid="972337486940812" type="number" />
                 <instance-variable name="FASE_ATUAL" sid="595504153130190" type="number" />
                 <instance-variable name="GOD_MODE" sid="539303995976143" type="number" />
+                <instance-variable name="SCORE" sid="969630561138435" type="number" />
+                <instance-variable name="SOUND" sid="473049672558221" type="number" />
             </instance-variables>
         </object-type>
         <object-type name="Audio" sid="876633167049827">
@@ -1606,6 +1597,119 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="BarraScore" sid="596528917344230">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="332664763887515">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="883950481181130" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502164" original-source="C:\Users\link_\Downloads\REX-simbolos.png">
+                        <collision-poly>
+                            <point x="0.0285171" y="0.0649351" />
+                            <point x="0.5" y="0.04329" />
+                            <point x="0.971483" y="0.0649351" />
+                            <point x="0.975285" y="0.943723" />
+                            <point x="0.5" y="0.969697" />
+                            <point x="0.0247148" y="0.943723" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BtPause" sid="800571935616820">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="557351163275728">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="229156541975018" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\link_\Downloads\rexPausar.png">
+                        <collision-poly>
+                            <point x="0.155172" y="0.155172" />
+                            <point x="0.5" y="0.00862068" />
+                            <point x="0.844828" y="0.155172" />
+                            <point x="0.991379" y="0.491379" />
+                            <point x="0.844828" y="0.836207" />
+                            <point x="0.5" y="0.991379" />
+                            <point x="0.155172" y="0.836207" />
+                            <point x="0.00862069" y="0.491379" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="714571049300771">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="633873279272268">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="804036534729198" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505882" original-source="C:\Users\link_\Downloads\REXpontos.png">
+                        <collision-poly>
+                            <point x="0.125926" y="0.4" />
+                            <point x="0.5" y="0.294118" />
+                            <point x="0.844444" y="0.494118" />
+                            <point x="0.937037" y="0.494118" />
+                            <point x="0.937037" y="0.8" />
+                            <point x="0.5" y="0.8" />
+                            <point x="0.137037" y="0.564706" />
+                            <point x="0.118519" y="0.494118" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Score" sid="341525020588167">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="819968437993072">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Sprite" sid="301531232527841">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="396157881126508" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503759" original-source="C:\Users\link_\Downloads\RexPLAY.png">
+                        <collision-poly>
+                            <point x="0.201493" y="0.203008" />
+                            <point x="0.5" y="0.075188" />
+                            <point x="0.798507" y="0.203008" />
+                            <point x="0.925373" y="0.496241" />
+                            <point x="0.798507" y="0.796992" />
+                            <point x="0.5" y="0.924812" />
+                            <point x="0.201493" y="0.796992" />
+                            <point x="0.0746269" y="0.496241" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spFundo3" sid="850863625313278">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="360742038862847">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="851203958973979" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Animation2" pingpong="0" repeatcount="1" repeatto="0" sid="639536059933455" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="fmTambor" plugin-id="Sprite" sid="284777844382716">
@@ -1630,13 +1734,13 @@
         <event-sheet>CREDITS_EVENTS.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="4" />
-        <global-instance type="Touch" uid="9">
+        <global-instance type="Mouse" uid="42" />
+        <global-instance type="Touch" uid="44">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Audio" uid="42">
+        <global-instance type="Audio" uid="46">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -1656,7 +1760,6 @@
         <file name="Carrapicho-Tic_Tic_Tac-x3yjfj.ogg" />
         <file name="Jogo - Kevin MacLeod - Allada.ogg" />
         <file name="Menu - Kevin MacLeod - Zanzibar.ogg" />
-        <file name="263889_jarredgibb_rattle-drum.ogg" />
         <file name="button.ogg" />
         <file name="chegadaNave.ogg" />
         <file name="derrota.ogg" />
