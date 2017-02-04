@@ -77,6 +77,9 @@
                         <action behavior="Bullet" id="5" name="Set enabled" sid="893160351312626" type="tbGuia">
                             <param id="0" name="State">0</param>
                         </action>
+                        <action behavior="Bullet2" id="5" name="Set enabled" sid="664500919759725" type="tbNuvens">
+                            <param id="0" name="State">0</param>
+                        </action>
                         <action behavior="Bullet" id="5" name="Set enabled" sid="378156483129609" type="spObjetoCodigo">
                             <param id="0" name="State">0</param>
                         </action>
@@ -231,6 +234,9 @@
                         <action behavior="Bullet" id="1" name="Set acceleration" sid="374202678794459" type="tbGuia">
                             <param id="0" name="Acceleration">ACE_BG_2</param>
                         </action>
+                        <action behavior="Bullet2" id="1" name="Set acceleration" sid="430590656723181" type="tbNuvens">
+                            <param id="0" name="Acceleration">ACE_BG_2</param>
+                        </action>
                         <action id="-26" name="Move to layer" sid="392782806221553" type="spFogo">
                             <param id="0" name="Layer">3</param>
                         </action>
@@ -250,6 +256,9 @@
                     </conditions>
                     <actions>
                         <action behavior="Bullet" id="5" name="Set enabled" sid="208160532420620" type="tbGuia">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Bullet2" id="5" name="Set enabled" sid="494939469097565" type="tbNuvens">
                             <param id="0" name="State">0</param>
                         </action>
                         <action id="-16" name="Wait" sid="975038455885782" type="System">
@@ -278,6 +287,9 @@
                             <param id="1" name="Value">arControl.FASE_ATUAL</param>
                         </action>
                         <action behavior="Bullet" id="1" name="Set acceleration" sid="905590837952335" type="tbGuia">
+                            <param id="0" name="Acceleration">ACE_BG_1</param>
+                        </action>
+                        <action behavior="Bullet2" id="1" name="Set acceleration" sid="563496060116960" type="tbNuvens">
                             <param id="0" name="Acceleration">ACE_BG_1</param>
                         </action>
                         <action behavior="Pin" id="0" name="Pin to object" sid="296081233734554" type="spFogo">
@@ -312,6 +324,14 @@
                             <param id="0" name="Pin to">tbGuia</param>
                             <param id="1" name="Mode">0</param>
                         </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="225771292832389" type="ptFolhas1">
+                            <param id="0" name="Pin to">tbGuia</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="214805882020154" type="ptFolhas2">
+                            <param id="0" name="Pin to">tbGuia</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
                         <action behavior="Bullet" id="3" name="Set angle of motion" sid="278390428857729" type="spJogador">
                             <param id="0" name="Angle">-180</param>
                         </action>
@@ -325,13 +345,13 @@
                             <param id="0" name="Visibility">1</param>
                         </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="782799491835770" type="spSuba" />
-                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="118204049805564" type="spNuvens">
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="118204049805564" type="tbNuvens">
                             <param id="0" name="Angle">-180</param>
                         </action>
-                        <action id="-1" name="Set X" sid="237614830775122" type="spNuvens">
+                        <action id="-1" name="Set X" sid="237614830775122" type="tbNuvens">
                             <param id="0" name="X">0</param>
                         </action>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="229607697040023" type="spNuvens">
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="229607697040023" type="tbNuvens">
                             <param id="0" name="State">1</param>
                         </action>
                     </actions>
@@ -561,6 +581,15 @@
                                 <action behavior="Bullet" id="5" name="Set enabled" sid="912505754558597" type="tbGuia">
                                     <param id="0" name="State">1</param>
                                 </action>
+                                <action behavior="Bullet2" id="0" name="Set speed" sid="773202501251355" type="tbNuvens">
+                                    <param id="0" name="Speed">VEL_BG_1</param>
+                                </action>
+                                <action behavior="Bullet2" id="3" name="Set angle of motion" sid="138403142824916" type="tbNuvens">
+                                    <param id="0" name="Angle">-90</param>
+                                </action>
+                                <action behavior="Bullet2" id="5" name="Set enabled" sid="353267472344989" type="tbNuvens">
+                                    <param id="0" name="State">1</param>
+                                </action>
                                 <action behavior="Bullet" id="5" name="Set enabled" sid="794332742324292" type="spJogador">
                                     <param id="0" name="State">1</param>
                                 </action>
@@ -723,6 +752,12 @@
                                             <param id="0" name="Speed">VEL_BG_2</param>
                                         </action>
                                         <action behavior="Bullet" id="3" name="Set angle of motion" sid="701318528788522" type="tbGuia">
+                                            <param id="0" name="Angle">90</param>
+                                        </action>
+                                        <action behavior="Bullet2" id="0" name="Set speed" sid="825575469692136" type="tbNuvens">
+                                            <param id="0" name="Speed">VEL_BG_2</param>
+                                        </action>
+                                        <action behavior="Bullet2" id="3" name="Set angle of motion" sid="411330167711352" type="tbNuvens">
                                             <param id="0" name="Angle">90</param>
                                         </action>
                                         <action behavior="Timer" id="1" name="Stop timer" sid="787817824476611" type="spTamborEsq">
@@ -934,6 +969,12 @@
                             <param id="0" name="Speed">VEL_BG_1</param>
                         </action>
                         <action behavior="Bullet" id="3" name="Set angle of motion" sid="402374786348990" type="tbGuia">
+                            <param id="0" name="Angle">-90</param>
+                        </action>
+                        <action behavior="Bullet2" id="0" name="Set speed" sid="556712386253902" type="tbNuvens">
+                            <param id="0" name="Speed">VEL_BG_1</param>
+                        </action>
+                        <action behavior="Bullet2" id="3" name="Set angle of motion" sid="996839461006242" type="tbNuvens">
                             <param id="0" name="Angle">-90</param>
                         </action>
                         <action behavior="Bullet" id="0" name="Set speed" sid="753502804731956" type="spObjetoCodigo">
@@ -1374,23 +1415,15 @@
         </event-block>
         <event-block sid="687157168797445">
             <conditions>
-                <condition id="-1" name="Compare X" sid="616376419707336" type="spNuvens">
+                <condition id="-1" name="Compare X" sid="616376419707336" type="tbNuvens">
                     <param id="0" name="Comparison">2</param>
-                    <param id="1" name="X co-ordinate">-spNuvens.Width/2</param>
+                    <param id="1" name="X co-ordinate">-tbNuvens.Width/2</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-1" name="Set X" sid="895155887761984" type="spNuvens">
+                <action id="-1" name="Set X" sid="205873614341297" type="tbNuvens">
                     <param id="0" name="X">0</param>
                 </action>
-            </actions>
-        </event-block>
-        <event-block disabled="1" sid="126112559813565">
-            <conditions>
-                <condition behavior="Fade" id="1" name="On fade-in finished" sid="105976666590050" type="spNuvens" />
-            </conditions>
-            <actions>
-                <action behavior="Fade" id="0" name="Restart fade" sid="959936453195287" type="spNuvens" />
             </actions>
         </event-block>
     </events>

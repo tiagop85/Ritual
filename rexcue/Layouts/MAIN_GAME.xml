@@ -303,6 +303,90 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="ptFolhas1" uid="6">
+                    <properties>
+                        <rate>14</rate>
+                        <spray-cone>100</spray-cone>
+                        <type>Continuous spray</type>
+                        <initial-particle-properties></initial-particle-properties>
+                        <speed>500</speed>
+                        <size>15</size>
+                        <opacity>80</opacity>
+                        <grow-rate>0</grow-rate>
+                        <x-randomiser>100</x-randomiser>
+                        <y-randomiser>900</y-randomiser>
+                        <speed-randomiser->100</speed-randomiser->
+                        <size-randomiser>50</size-randomiser>
+                        <grow-rate-randomiser>2</grow-rate-randomiser>
+                        <particle-lifetime-properties></particle-lifetime-properties>
+                        <acceleration>-150</acceleration>
+                        <gravity>4</gravity>
+                        <angle-randomiser>10</angle-randomiser>
+                        <speed-randomiser>900</speed-randomiser>
+                        <opacity-randomiser>0</opacity-randomiser>
+                        <destroy-mode>Fade to invisible</destroy-mode>
+                        <timeout>2</timeout>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>457</x>
+                        <y>295</y>
+                        <z>0</z>
+                        <width>975</width>
+                        <height>1384</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>3.136852026</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ptFolhas3" uid="39">
+                    <properties>
+                        <rate>12</rate>
+                        <spray-cone>100</spray-cone>
+                        <type>Continuous spray</type>
+                        <initial-particle-properties></initial-particle-properties>
+                        <speed>500</speed>
+                        <size>15</size>
+                        <opacity>80</opacity>
+                        <grow-rate>0</grow-rate>
+                        <x-randomiser>100</x-randomiser>
+                        <y-randomiser>900</y-randomiser>
+                        <speed-randomiser->100</speed-randomiser->
+                        <size-randomiser>50</size-randomiser>
+                        <grow-rate-randomiser>2</grow-rate-randomiser>
+                        <particle-lifetime-properties></particle-lifetime-properties>
+                        <acceleration>-150</acceleration>
+                        <gravity>4</gravity>
+                        <angle-randomiser>10</angle-randomiser>
+                        <speed-randomiser>900</speed-randomiser>
+                        <opacity-randomiser>0</opacity-randomiser>
+                        <destroy-mode>Fade to invisible</destroy-mode>
+                        <timeout>2</timeout>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>459</x>
+                        <y>301</y>
+                        <z>0</z>
+                        <width>975</width>
+                        <height>1384</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>3.136852026</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -839,50 +923,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spNuvens" uid="44">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                        <behavior-instance type="Bullet">
-                            <properties>
-                                <speed>600</speed>
-                                <acceleration>0</acceleration>
-                                <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>No</set-angle>
-                                <initial-state>Disabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>0</fade-in-time>
-                                <wait-time>3</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>No</destroy>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>0</x>
-                        <y>416</y>
-                        <z>0</z>
-                        <width>1582</width>
-                        <height>798</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0.523474157</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="spSuba" uid="40">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
@@ -914,6 +954,145 @@
                         <hotspotY>0.501618147</hotspotY>
                         <angle>0</angle>
                         <opacity>0.649999976</opacity>
+                    </world>
+                </instance>
+                <instance type="ptFolhas1" uid="3">
+                    <properties>
+                        <rate>14</rate>
+                        <spray-cone>100</spray-cone>
+                        <type>Continuous spray</type>
+                        <initial-particle-properties></initial-particle-properties>
+                        <speed>500</speed>
+                        <size>15</size>
+                        <opacity>80</opacity>
+                        <grow-rate>0</grow-rate>
+                        <x-randomiser>100</x-randomiser>
+                        <y-randomiser>900</y-randomiser>
+                        <speed-randomiser->100</speed-randomiser->
+                        <size-randomiser>50</size-randomiser>
+                        <grow-rate-randomiser>2</grow-rate-randomiser>
+                        <particle-lifetime-properties></particle-lifetime-properties>
+                        <acceleration>-150</acceleration>
+                        <gravity>4</gravity>
+                        <angle-randomiser>10</angle-randomiser>
+                        <speed-randomiser>900</speed-randomiser>
+                        <opacity-randomiser>0</opacity-randomiser>
+                        <destroy-mode>Fade to invisible</destroy-mode>
+                        <timeout>2</timeout>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>459.082763672</x>
+                        <y>294.502319336</y>
+                        <z>0</z>
+                        <width>975</width>
+                        <height>1384</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>3.136852026</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ptFolhas2" uid="7">
+                    <properties>
+                        <rate>13</rate>
+                        <spray-cone>100</spray-cone>
+                        <type>Continuous spray</type>
+                        <initial-particle-properties></initial-particle-properties>
+                        <speed>500</speed>
+                        <size>15</size>
+                        <opacity>80</opacity>
+                        <grow-rate>0</grow-rate>
+                        <x-randomiser>100</x-randomiser>
+                        <y-randomiser>900</y-randomiser>
+                        <speed-randomiser->100</speed-randomiser->
+                        <size-randomiser>50</size-randomiser>
+                        <grow-rate-randomiser>2</grow-rate-randomiser>
+                        <particle-lifetime-properties></particle-lifetime-properties>
+                        <acceleration>-150</acceleration>
+                        <gravity>4</gravity>
+                        <angle-randomiser>10</angle-randomiser>
+                        <speed-randomiser>900</speed-randomiser>
+                        <opacity-randomiser>0</opacity-randomiser>
+                        <destroy-mode>Fade to invisible</destroy-mode>
+                        <timeout>2</timeout>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>457</x>
+                        <y>296</y>
+                        <z>0</z>
+                        <width>975</width>
+                        <height>1384</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>3.136852026</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="tbNuvens" uid="43">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>500</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Vertical</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Bullet2">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>0</x>
+                        <y>-406</y>
+                        <z>0</z>
+                        <width>2762</width>
+                        <height>1267</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.800000012</opacity>
                     </world>
                 </instance>
             </instances>

@@ -54,7 +54,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/spVitoria/" />
         <folder expanded="1" path="animation-folder/spSuba/" />
         <folder expanded="1" path="animation-folder/spFundo2/" />
-        <folder expanded="1" path="animation-folder/spNuvens/" />
         <folder expanded="1" path="animation-folder/spOVNI/" />
     </folders-expanded>
 </c2uistate>
