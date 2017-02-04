@@ -1508,6 +1508,14 @@
                 <action behavior="Fade" id="1" name="Start fade" sid="969589446934020" type="spSuba" />
             </actions>
         </event-block>
+        <event-block sid="639006777877506">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="356188247973600" type="spFundo3" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="1" name="Start fade" sid="172015283985355" type="spFundo3" />
+            </actions>
+        </event-block>
         <event-block sid="344637425223496">
             <conditions>
                 <condition id="1" name="Is overlapping another object" sid="298132362819989" type="spJogador">

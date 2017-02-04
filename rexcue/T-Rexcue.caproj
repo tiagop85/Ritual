@@ -1700,6 +1700,9 @@
                 <behavior-type name="Pin" sid="360742038862847">
                     <behavior id="Pin" />
                 </behavior-type>
+                <behavior-type name="Fade" sid="268905220280682">
+                    <behavior id="Fade" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="851203958973979" speed="5">
